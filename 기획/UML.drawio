@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-08T18:40:16.320Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="Jtn65fhQm8yZpL71WfFW" version="21.2.8" type="device">
+<mxfile host="Electron" modified="2023-05-09T12:05:24.589Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="LGYa93lFqiZ_-5MD-_In" version="21.2.8" type="device">
   <diagram id="Ue0m_00hYuM2AanBgo_J" name="페이지-1">
-    <mxGraphModel dx="3712" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3163" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <object label="" ReadJSON="" id="0">
           <mxCell />
@@ -18,7 +18,7 @@
         <mxCell id="vgwewGPwWs4jTi2JDRfR-23" value="+ METHOD" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="vgwewGPwWs4jTi2JDRfR-20" vertex="1">
           <mxGeometry y="56" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="vgwewGPwWs4jTi2JDRfR-25" value="시작 화면" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="vgwewGPwWs4jTi2JDRfR-25" value="시작 화면&amp;nbsp;: Scene&amp;nbsp;(Begin)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry y="10" width="650" height="260" as="geometry" />
         </mxCell>
         <mxCell id="vgwewGPwWs4jTi2JDRfR-26" value="+ 배경 이미지&lt;br&gt;+ btn 처음부터&lt;br&gt;+ btn 이어하기&lt;br&gt;+ btn 그만두기&lt;br&gt;+ btn 제목" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="vgwewGPwWs4jTi2JDRfR-25" vertex="1">
@@ -33,7 +33,7 @@
         <mxCell id="vgwewGPwWs4jTi2JDRfR-30" value="NAMESPACE" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=90;height=38;" parent="1" vertex="1">
           <mxGeometry x="-820" y="10" width="200" height="178" as="geometry" />
         </mxCell>
-        <mxCell id="pPsOl5LPwn0ToeVwiGtm-1" value="물건" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pPsOl5LPwn0ToeVwiGtm-1" value="물건 : Sprite (Object)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="790" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="pPsOl5LPwn0ToeVwiGtm-2" value="+ 상호작용 시 대사&lt;br&gt;+ 아이템" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="pPsOl5LPwn0ToeVwiGtm-1" vertex="1">
@@ -51,7 +51,7 @@
             <mxPoint x="1040" y="255" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pPsOl5LPwn0ToeVwiGtm-23" value="Main" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="pPsOl5LPwn0ToeVwiGtm-23" value="메인 : Scene (Main)" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="290" width="700" height="672" as="geometry" />
         </mxCell>
         <mxCell id="pPsOl5LPwn0ToeVwiGtm-10" value="JSON" style="html=1;whiteSpace=wrap;" parent="pPsOl5LPwn0ToeVwiGtm-23" vertex="1">
@@ -117,7 +117,7 @@
         <mxCell id="L1P2GhvZh-4gZIGBXF53-2" value="배드 or 해피 엔딩()" style="ellipse;whiteSpace=wrap;html=1;" parent="pPsOl5LPwn0ToeVwiGtm-23" vertex="1">
           <mxGeometry x="240" y="380" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="vgwewGPwWs4jTi2JDRfR-41" value="Map" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="vgwewGPwWs4jTi2JDRfR-41" value="맵 : Scene (Map)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="290" width="430" height="430" as="geometry" />
         </mxCell>
         <mxCell id="vgwewGPwWs4jTi2JDRfR-42" value="+ Map 번호&lt;br&gt;+ 퀵슬롯&lt;br&gt;+ 인벤토리&lt;br&gt;+ 타이머&lt;br&gt;&amp;nbsp; &amp;nbsp; # Map 번호 3, 4 에서만 작동&lt;br&gt;+ 메뉴&lt;br&gt;+ Room 배열&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ 현재 Room 번호&lt;br&gt;+ 오프닝 대사&lt;br&gt;+ 타이머 뷰&lt;br&gt;+ btn 인벤토리&lt;br&gt;+ btn 화살표&lt;br&gt;+ btn 메뉴" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="vgwewGPwWs4jTi2JDRfR-41" vertex="1">
@@ -151,7 +151,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-1" value="Room" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-1" value="방&amp;nbsp;: Scene&amp;nbsp;(Room)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-430" y="750" width="320" height="420" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-2" value="+ Room 이름&lt;br&gt;+ 배경 이미지&lt;br&gt;+ BGM&lt;br&gt;+ 물건&lt;br&gt;+ 컷신&lt;br&gt;+ 이동 가능 Room 리스트&lt;br&gt;+ 방 이동 효과음&lt;br&gt;+ 이동 불가시 컷신&lt;br&gt;+ 이동 불가시 대사&lt;br&gt;+ 이동 불가시 효과음" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-1" vertex="1">
@@ -172,7 +172,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-12" value="타이머" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-12" value="타이머 : Script (Timer)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="430" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-13" value="+ 남은시간" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-12" vertex="1">
@@ -192,7 +192,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-16" value="아이템" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-16" value="아이템 : Script (Item)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-860" y="798" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-17" value="+ 아이템 이미지&lt;br&gt;+ 아이템 터치 사운드&lt;br&gt;+ 아이템 이름" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-16" vertex="1">
@@ -207,19 +207,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-23" value="인벤토리" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-270" y="290" width="160" height="110" as="geometry" />
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-23" value="인벤토리 : Sprite (Inventory)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="280" width="190" height="110" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-24" value="+ 아이템 배열" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-23" vertex="1">
-          <mxGeometry y="26" width="160" height="22" as="geometry" />
+          <mxGeometry y="26" width="190" height="22" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1Pmvb0UldeOB8in_ccyl-23" vertex="1">
-          <mxGeometry y="48" width="160" height="8" as="geometry" />
+          <mxGeometry y="48" width="190" height="8" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-26" value="+ 아이템 삭제()&lt;br&gt;+ 인벤토리 열기()&lt;br&gt;+ 인벤토리 닫기()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-23" vertex="1">
-          <mxGeometry y="56" width="160" height="54" as="geometry" />
+          <mxGeometry y="56" width="190" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-31" value="JSON" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-31" value="JSON : Script" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1040" y="10" width="160" height="182" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-32" value="&amp;lt;&amp;lt; 저장 대상 속성 &amp;gt;&amp;gt;&lt;br&gt;+ Map" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-31" vertex="1">
@@ -231,17 +231,17 @@
         <mxCell id="1Pmvb0UldeOB8in_ccyl-34" value="+ CreateJSON(path)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ InputJSON(key, value)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ WriteJSON(path)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ ReadJSON(path)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-31" vertex="1">
           <mxGeometry y="108" width="160" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-84" value="제작자 화면" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="690" y="10" width="160" height="102" as="geometry" />
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-84" value="제작자 화면&amp;nbsp;: Scene (Maker)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="690" y="10" width="200" height="102" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-85" value="+ 텍스트" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-84" vertex="1">
-          <mxGeometry y="26" width="160" height="24" as="geometry" />
+          <mxGeometry y="26" width="200" height="24" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-86" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1Pmvb0UldeOB8in_ccyl-84" vertex="1">
-          <mxGeometry y="50" width="160" height="8" as="geometry" />
+          <mxGeometry y="50" width="200" height="8" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-87" value="+ 스크린 On()&lt;br&gt;+ 스크린 Off()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-84" vertex="1">
-          <mxGeometry y="58" width="160" height="44" as="geometry" />
+          <mxGeometry y="58" width="200" height="44" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-100" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.488;entryY=1.159;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="1Pmvb0UldeOB8in_ccyl-93" target="1Pmvb0UldeOB8in_ccyl-87" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -266,8 +266,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-166" value="컷신" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-660" y="960" width="160" height="120" as="geometry" />
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-166" value="컷신 : Sprite&amp;nbsp;(CutScene)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-660" y="960" width="160" height="130" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-167" value="+ 컷신 이미지" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-166" vertex="1">
           <mxGeometry y="26" width="160" height="22" as="geometry" />
@@ -275,8 +275,8 @@
         <mxCell id="1Pmvb0UldeOB8in_ccyl-168" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="1Pmvb0UldeOB8in_ccyl-166" vertex="1">
           <mxGeometry y="48" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="1Pmvb0UldeOB8in_ccyl-169" value="+ 컷신 출력()&lt;br&gt;+ 화면 흔들기()&lt;br&gt;+ 어두워짐()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-166" vertex="1">
-          <mxGeometry y="56" width="160" height="64" as="geometry" />
+        <mxCell id="1Pmvb0UldeOB8in_ccyl-169" value="+ 컷신 On()&lt;br&gt;+ 컷신 Off()&lt;br&gt;+ 컷신 흔들기()&lt;br&gt;+ 컷신 어두워짐()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="1Pmvb0UldeOB8in_ccyl-166" vertex="1">
+          <mxGeometry y="56" width="160" height="74" as="geometry" />
         </mxCell>
         <mxCell id="1Pmvb0UldeOB8in_ccyl-174" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="pPsOl5LPwn0ToeVwiGtm-23" target="pPsOl5LPwn0ToeVwiGtm-23" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -290,7 +290,7 @@
             <mxPoint x="730" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aitk3Akj5JwvJX5OAv1X-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.443;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aitk3Akj5JwvJX5OAv1X-1" target="vgwewGPwWs4jTi2JDRfR-42">
+        <mxCell id="aitk3Akj5JwvJX5OAv1X-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.443;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aitk3Akj5JwvJX5OAv1X-1" target="vgwewGPwWs4jTi2JDRfR-42" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-50" y="591" />
@@ -298,16 +298,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aitk3Akj5JwvJX5OAv1X-1" value="메뉴" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aitk3Akj5JwvJX5OAv1X-1" value="&amp;nbsp;메뉴 : Scene (Menu)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-590" y="550" width="480" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="aitk3Akj5JwvJX5OAv1X-2" value="+ 음량&lt;br&gt;+ btn 계속하기&lt;br&gt;+ btn 그만두기" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="aitk3Akj5JwvJX5OAv1X-1">
+        <mxCell id="aitk3Akj5JwvJX5OAv1X-2" value="+ 음량&lt;br&gt;+ btn 계속하기&lt;br&gt;+ btn 그만두기" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aitk3Akj5JwvJX5OAv1X-1" vertex="1">
           <mxGeometry y="26" width="480" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="aitk3Akj5JwvJX5OAv1X-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="aitk3Akj5JwvJX5OAv1X-1">
+        <mxCell id="aitk3Akj5JwvJX5OAv1X-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="aitk3Akj5JwvJX5OAv1X-1" vertex="1">
           <mxGeometry y="90" width="480" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="aitk3Akj5JwvJX5OAv1X-4" value="+ 스크린 On()&lt;br&gt;+ 스크린 Off()&lt;br&gt;+ 계속하기 이벤트 -&amp;gt; 스크린 Off()&lt;br&gt;+ 그만두기 이벤트 -&amp;gt; JSON 으로 현재 Map 객체 저장 후 시작화면.스크린 On()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="aitk3Akj5JwvJX5OAv1X-1">
+        <mxCell id="aitk3Akj5JwvJX5OAv1X-4" value="+ 메뉴 On()&lt;br&gt;+ 메뉴 Off()&lt;br&gt;+ 계속하기 이벤트 -&amp;gt; 스크린 Off()&lt;br&gt;+ 그만두기 이벤트 -&amp;gt; JSON 으로 현재 Map 객체 저장 후 시작화면.스크린 On()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aitk3Akj5JwvJX5OAv1X-1" vertex="1">
           <mxGeometry y="98" width="480" height="82" as="geometry" />
         </mxCell>
       </root>
