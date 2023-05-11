@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/OnlyMutalisk.unity
+- path: Assets/Item_Inventory_Object/hyesuhan.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
