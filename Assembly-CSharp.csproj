@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AB9EA7F1-CAD7-7461-EB95-94FD22DCFCDD}</ProjectGuid>
+    <ProjectGuid>{EF98F91E-4EED-D5E2-6E0F-82267265CE0C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,18 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Class\Item.cs" />
-    <Compile Include="Assets\Class\Timer.cs" />
-    <Compile Include="Assets\Class\Room.cs" />
-    <Compile Include="Assets\Class\Map.cs" />
-    <Compile Include="Assets\Class\Object.cs" />
-    <Compile Include="Assets\Class\JSON.cs" />
-    <Compile Include="Assets\Class\CutScene.cs" />
-    <Compile Include="Assets\Class\Menu.cs" />
-    <Compile Include="Assets\Class\Maker.cs" />
-    <Compile Include="Assets\Class\Main.cs" />
-    <Compile Include="Assets\Class\Begin.cs" />
-    <Compile Include="Assets\Class\Inventory.cs" />
+    <Compile Include="Assets\Room\Room.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
