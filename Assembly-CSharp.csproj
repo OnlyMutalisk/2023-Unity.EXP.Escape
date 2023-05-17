@@ -59,6 +59,8 @@
     <Compile Include="Assets\Room\RoomTemplate\Room.cs" />
     <Compile Include="Assets\Room\FadeInOut\FadeInOut.cs" />
     <Compile Include="Assets\Room\RoadView\RoadView.cs" />
+    <Compile Include="Assets\Room\FadeInOut\test.cs" />
+    <Compile Include="Assets\Room\Module\이미지_이펙트.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

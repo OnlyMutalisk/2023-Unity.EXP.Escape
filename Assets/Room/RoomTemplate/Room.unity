@@ -134,14 +134,13 @@ GameObject:
   - component: {fileID: 295693384}
   - component: {fileID: 295693386}
   - component: {fileID: 295693385}
-  - component: {fileID: 295693387}
   m_Layer: 5
-  m_Name: FadeInOut
+  m_Name: FadeIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &295693384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -174,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -199,19 +198,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295693383}
   m_CullTransparentMesh: 1
---- !u!114 &295693387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295693383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f6710639d8522b4c98325eb39ca3b6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 295693385}
 --- !u!1 &632479726
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931175391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2, y: -1.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 97.07587, y: 43.7168, z: 0}
   m_Children: []
   m_Father: {fileID: 632479730}
@@ -573,9 +559,25 @@ PrefabInstance:
       propertyPath: nextRoomName
       value: Room 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2217728920291992596, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2217728920291992596, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2217728920291992596, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2217728920291992596, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4520927014481040281, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
       propertyPath: m_Name
-      value: LoadView
+      value: RoadView
       objectReference: {fileID: 0}
     - target: {fileID: 6557405341073889503, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
       propertyPath: m_Pivot.x
