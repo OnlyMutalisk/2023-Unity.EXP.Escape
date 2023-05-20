@@ -26,23 +26,35 @@ public class Room : MonoBehaviour
         // 상호작용 
 
         // 씬을 페이드 인 합니다.
-        FadeIn();
+        StartCoroutine(FadeIn());
+
+        // 씬을 페이드 아웃 합니다.
+        // fadeInOut.FadeOut();
+
     }
 
     #region 내부 구현 (private)
 
-    private void FadeIn()
+    private IEnumerator FadeIn()
     {
-        // 검은 화면 오브젝트인 "FadeIn" 를 페이드 아웃하여, 씬을 페이드 인 시킴
-        // FadeIn 오브젝트 선택
-        GameObject gameObject = GameObject.Find("FadeIn");
+        // 검은 화면 오브젝트인 "FadeInOut" 를 페이드 아웃 하여, 씬을 페이드 인 시킴
+        // FadeInOut 오브젝트 선택
+        GameObject gameObject = GameObject.Find("FadeInOut");
+
+        // FadeInOut 오브젝트 활성화
+        gameObject.SetActive(true);
 
         // 이미지 컴포넌트의 Color 값을 건드려, 검은 화면으로 만듦.
         gameObject.GetComponent<Image>().color = new Color(0, 0, 0, 1);
 
-        // 이제 FadeIn 오브젝트를 페이드 아웃
+        // 이제 FadeInOut 오브젝트를 time 초 동안 페이드 아웃
+        float time = 1;
         이미지_이펙트 imageEffect = new 이미지_이펙트();
-        StartCoroutine(imageEffect.페이드_아웃("FadeIn", 2, 60));
+        StartCoroutine(imageEffect.페이드_아웃("FadeInOut", time, 60));
+
+        // time 초 동안 대기 후, FadeInOut 오브젝트를 비활성화 시켜 다른 오브젝트를 가리지 않게 함.
+        yield return new WaitForSeconds(time * (float)2);
+        gameObject.SetActive(false);
     }
 
     #endregion

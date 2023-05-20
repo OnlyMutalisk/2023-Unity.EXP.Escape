@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 762cb5d58257d7d41ab01514b1ed3e3b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3acd8729162aeca4a84b4b09bc5dae36, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LoadView, Assembly-CSharp
+      - m_Target: {fileID: 5365351513043940257}
+        m_TargetAssemblyTypeName: RoadView, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 1
         m_Arguments:
