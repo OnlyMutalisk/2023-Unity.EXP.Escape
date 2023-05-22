@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Begin_Maker\Begin\Scripts\MakerButton.cs" />
     <Compile Include="Assets\Begin_Maker\Maker\Scripts\ScreenButton.cs" />
+    <Compile Include="Assets\Begin_Maker\Begin\Scripts\StartButton.cs" />
+    <Compile Include="Assets\Begin_Maker\Begin\Scripts\ExitButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
