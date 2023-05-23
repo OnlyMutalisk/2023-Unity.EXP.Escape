@@ -64,14 +64,20 @@
     <Compile Include="Assets\Room\RoomTemplate\Scripts\InventoryOnOff.cs" />
     <Compile Include="Assets\Begin_Maker\Begin\Scripts\ExitButton.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Scripts\Monologue.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Begin_Maker\Begin\Scripts\MakerButton.cs" />
     <Compile Include="Assets\Begin_Maker\Begin\Scripts\StartButton.cs" />
+=======
+>>>>>>> Room
     <Compile Include="Assets\Room\RoomTemplate\Scripts\RoomName.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadViewOnOff.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Scripts\Print.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Room.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadView.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Begin_Maker\Maker\Scripts\ScreenButton.cs" />
+=======
+>>>>>>> Room
     <Compile Include="Assets\Room\Resources\RoomSettings.cs" />
   </ItemGroup>
   <ItemGroup>

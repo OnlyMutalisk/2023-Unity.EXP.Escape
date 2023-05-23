@@ -21,10 +21,26 @@ EditorUserSettings:
       value: 22424703114646690201016d3d224f40591a193a7c17ade3f8a2f2d7b1ae2136ebf32f
       flags: 0
     RecentlyUsedScenePath-5:
+<<<<<<< HEAD
       value: 22424703114646690201016d3d224f40591a193a7c17aadbd1a5e3c2acf53a31f6fe
       flags: 0
     RecentlyUsedScenePath-6:
       value: 22424703114646790809052c2f0e5e1b13055708292f2f3e620b1834ebee7a2decee22f0
+=======
+      value: 22424703114646690201016d3d224f40591a193a7c17ade3f8a2f2d7b3ae2136ebf32f
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 22424703114646690201016d3d224f40591a193a7c17ade3f8a2f2d7b0ae2136ebf32f
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646690201016d3d224f40591a193a7c17ade3f8a2f2d7b1ae2136ebf32f
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646690201016d3d224f40591a193a7c17aadbd1a5e3c2acf53a31f6fe
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646690201016d3d224f40591a193a7c17ace1fda5f6f7b2ae2136ebf32f
+>>>>>>> Room
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
