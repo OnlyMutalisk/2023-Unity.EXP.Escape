@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Slot
+  - ItemName
+  - ItemImage
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Examples
   - Water
   - UI
   - 
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ExampleItems
+    uniqueID: 3618029961
     locked: 0
