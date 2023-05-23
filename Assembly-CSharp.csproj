@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EF98F91E-4EED-D5E2-6E0F-82267265CE0C}</ProjectGuid>
+    <ProjectGuid>{13895069-5644-BA72-48BD-816C5C55FC7C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,13 +56,19 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Room\RoomTemplate\Module\이미지_이펙트.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\Module\텍스트_이펙트.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\Module\이미지_이펙트.cs" />
+    <Compile Include="Assets\Room\Resources\Messages.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\MenuOnOff.cs" />
+    <Compile Include="Assets\Room\Map0\map0_시작\Scripts\FadeInOutText.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\InventoryOnOff.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\Monologue.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadViewOnOff.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\Print.cs" />
     <Compile Include="Assets\Room\RoomTemplate\Room.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\RoadView\RoadView.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\QuickMenu\RoadViewOnOff\RoadViewOnOff.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\QuickMenu\InventoryOnOff\InventoryOnOff.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\QuickMenu\MenuOnOff\MenuOnOff.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadView.cs" />
+    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoomName.cs" />
+    <Compile Include="Assets\Room\Resources\RoomSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
