@@ -42,7 +42,7 @@ public class GameTimer : MonoBehaviour
         GameManager.IsPause = false;
     }
 
-    //타이머가 다 되어서 게임오
+    //타이머가 다 되어서 게임over
     public void GameOver()
     {
 

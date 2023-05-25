@@ -56,10 +56,12 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/CutScene_Timer_Menu/JunResources/Scripts/SoundManager.cs" />
     <Compile Include="Assets/CutScene_Timer_Menu/JunResources/Scripts/GameManager.cs" />
     <Compile Include="Assets/CutScene_Timer_Menu/JunResources/Scripts/GameTimer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets/CutScene_Timer_Menu/JunResources/Audio/8Bit Music Album - 051321/Notes.txt" />
     <None Include="Assets/CutScene_Timer_Menu/test.txt" />
   </ItemGroup>
   <ItemGroup>
