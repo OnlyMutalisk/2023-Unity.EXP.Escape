@@ -56,29 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\Module\텍스트_이펙트.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\Module\이미지_이펙트.cs" />
-    <Compile Include="Assets\Room\Resources\Messages.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\MenuOnOff.cs" />
-    <Compile Include="Assets\Room\Map0\map0_시작\Scripts\FadeInOutText.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\InventoryOnOff.cs" />
-    <Compile Include="Assets\Begin_Maker\Begin\Scripts\ExitButton.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\Monologue.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Begin_Maker\Begin\Scripts\MakerButton.cs" />
-    <Compile Include="Assets\Begin_Maker\Begin\Scripts\StartButton.cs" />
-=======
->>>>>>> Room
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoomName.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadViewOnOff.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\Print.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Room.cs" />
-    <Compile Include="Assets\Room\RoomTemplate\Scripts\RoadView.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Begin_Maker\Maker\Scripts\ScreenButton.cs" />
-=======
->>>>>>> Room
-    <Compile Include="Assets\Room\Resources\RoomSettings.cs" />
+    <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
+    <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
+    <Compile Include="Assets\Scripts\Room\Messages.cs" />
+    <Compile Include="Assets\Scripts\Room\MenuOnOff.cs" />
+    <Compile Include="Assets\Scenes\Map0\map0_시작\Scripts\FadeInOutText.cs" />
+    <Compile Include="Assets\Scripts\Room\InventoryOnOff.cs" />
+    <Compile Include="Assets\Scripts\Begin\ExitButton.cs" />
+    <Compile Include="Assets\Scripts\Room\Monologue.cs" />
+    <Compile Include="Assets\Scripts\Begin\MakerButton.cs" />
+    <Compile Include="Assets\Scripts\Begin\StartButton.cs" />
+    <Compile Include="Assets\Scripts\Room\RoomName.cs" />
+    <Compile Include="Assets\Scripts\Room\RoadViewOnOff.cs" />
+    <Compile Include="Assets\Scripts\Room\Print.cs" />
+    <Compile Include="Assets\Scripts\Room\Room.cs" />
+    <Compile Include="Assets\Scripts\Room\RoadView.cs" />
+    <Compile Include="Assets\Scripts\Maker\ScreenButton.cs" />
+    <Compile Include="Assets\Scripts\Room\RoomSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
