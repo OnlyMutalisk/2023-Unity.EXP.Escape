@@ -58,9 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
-    <Compile Include="Assets\Scripts\Room\Messages.cs" />
+    <Compile Include="Assets\Resources\Messages.cs" />
     <Compile Include="Assets\Scripts\Room\MenuOnOff.cs" />
-    <Compile Include="Assets\Scenes\Map0\map0_시작\Scripts\FadeInOutText.cs" />
+    <Compile Include="Assets\Scripts\Map0\map0_시작\FadeInOutText.cs" />
     <Compile Include="Assets\Scripts\Room\InventoryOnOff.cs" />
     <Compile Include="Assets\Scripts\Begin\ExitButton.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Scripts\Maker\ScreenButton.cs" />
     <Compile Include="Assets\Scripts\Room\RoomSettings.cs" />
+    <Compile Include="Assets\Scripts\Map0\map0_독백\map0_독백.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

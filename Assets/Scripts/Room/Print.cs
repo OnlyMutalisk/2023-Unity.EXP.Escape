@@ -99,6 +99,7 @@ public class Print : MonoBehaviour
     {
         if (flag == true)
         {
+            string a = gameObject.name;
             // 출력할 title, message, time 을 가지고 있는 객체를 가져옵니다.
             // 오브젝트의 이름과 동일한 객체를 가져옵니다.
             ObjectMessage objectMessage = Load(objectName);

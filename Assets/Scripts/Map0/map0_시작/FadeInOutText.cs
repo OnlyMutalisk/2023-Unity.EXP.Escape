@@ -28,6 +28,6 @@ public class FadeInOutText : MonoBehaviour
         StartCoroutine(textEffect.페이드_아웃("FadeInOutText", 1, 60));
         yield return new WaitForSeconds(1.5f);
 
-        SceneManager.LoadScene("map0_거실0");
+        SceneManager.LoadScene("map0_독백");
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Reflection;
+using UnityEngine.SceneManagement;
 
 public class Monologue : MonoBehaviour
 {
@@ -100,15 +102,23 @@ public class Monologue : MonoBehaviour
     #endregion
 
     /// <summary>
-    /// <br>지정된 독백 메시지를 순차 출력합니다.</br>
+    /// <br>현재 씬에 해당하는 독백 메시지를 순차 출력합니다.</br>
     /// </summary>
     public void PrintMonologue()
     {
+        // 현재 씬의 이름을 가져옵니다.
+        string messageName = SceneManager.GetActiveScene().name;
+
+        // 리플렉션을 통해 현재 씬 이름에 해당하는 독백 메시지에 접근합니다.
+        Messages messages = new Messages();
+        FieldInfo fieldInfo = typeof(Messages).GetField(messageName);
+        LinkedList<string> message = fieldInfo.GetValue(messages) as LinkedList<string>;
+
         intSkipFlag++;
 
         if (boolCoroutineSynchronizeFlag == true)
         {
-            StartCoroutine(IEnumeratorPrintMonologue(Messages.map0_독백));
+            StartCoroutine(IEnumeratorPrintMonologue(message));
         }
     }
 }
