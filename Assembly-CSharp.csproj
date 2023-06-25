@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
+    <Compile Include="Assets\Scripts\Map0\map0_독백\map0_독백.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
     <Compile Include="Assets\Scripts\Room\MenuOnOff.cs" />
@@ -73,7 +74,8 @@
     <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Scripts\Maker\ScreenButton.cs" />
     <Compile Include="Assets\Scripts\Room\RoomSettings.cs" />
-    <Compile Include="Assets\Scripts\Map0\map0_독백\map0_독백.cs" />
+    <Compile Include="Assets\Scripts\Room\CutScene.cs" />
+    <Compile Include="Assets\Resources\MonologueEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

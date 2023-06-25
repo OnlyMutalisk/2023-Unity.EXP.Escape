@@ -5,20 +5,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Reflection;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class Monologue : MonoBehaviour
 {
+
     #region 내부 구현
 
     // 코루틴 동기화 플래그 입니다.
     public bool boolCoroutineSynchronizeFlag = true;
-
     public int intSkipFlag = 0;
+
+    // 독백 이벤트 감지용 플래그 입니다.
+    public static int monologueEventFlag = 0;
 
     // 인스펙터에서 연결합니다.
     public Text componentText;
     public GameObject gameObjectPanelButton;
     public GameObject gameObjectArrow;
+    public MonologueEvent monologueEvent;
 
     // 독백의 이터레이터 입니다.
     public int intCount;
@@ -38,6 +43,12 @@ public class Monologue : MonoBehaviour
         // 아직 출력돼야 할 메시지가 남았다면
         if (intCount < 독백.Count)
         {
+            // 독백 이벤트를 발생시킵니다.
+            monologueEvent.Event();
+
+            // 독백 이벤트 플래그를 갱신합니다.
+            monologueEventFlag++;
+
             // 텍스트를 초기화 합니다.
             componentText.text = "";
 
@@ -85,6 +96,9 @@ public class Monologue : MonoBehaviour
         // 모두 다 출력을 완료 했다면
         else
         {
+            // 독백 이벤트 플래그를 초기화 합니다.
+            monologueEventFlag = 0;
+
             // 독백 패널을 닫습니다.
             gameObjectPanelButton.SetActive(false);
 

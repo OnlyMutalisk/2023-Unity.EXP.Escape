@@ -36,6 +36,10 @@ public class Messages : MonoBehaviour
         // 씬 "Room" 의 독백 대사 입니다.
         Room.AddLast("1~");
         Room.AddLast("2~");
+        Room.AddLast("3~");
+        Room.AddLast("4~");
+        Room.AddLast("5~");
+        Room.AddLast("6~");
         Room.AddLast("마지막");
 
         // 씬 "map0_독백" 의 독백 대사 입니다.
