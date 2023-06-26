@@ -17,7 +17,7 @@ public class CutScene : MonoBehaviour
     이미지_이펙트 imageEffect = new 이미지_이펙트();
 
     /// <summary>
-    /// <br>인덱스에 해당하는 이미지를 흔듭니다.</br>
+    /// <br>인덱스 번호에 해당하는 이미지를 흔듭니다.</br>
     /// </summary>
     public IEnumerator CoroutineShakeImage(int index)
     {
@@ -67,9 +67,9 @@ public class CutScene : MonoBehaviour
     }
 
     /// <summary>
-    /// <br>인덱스에 해당하는 이미지를 팝업 후, 팝다운 합니다.</br>
+    /// <br>인덱스 번호에 해당하는 이미지를 일정 초 동안 팝업 합니다.</br>
     /// </summary>
-    public IEnumerator CoroutinePopUpImage(int index)
+    public IEnumerator CoroutinePopUpDownImage(int index)
     {
         StartCoroutine(imageEffect.페이드_인(images[index].name, 1, 60));
 
@@ -87,6 +87,7 @@ public class CutScene : MonoBehaviour
     {
         images[index].active = true;
 
+        StartCoroutine(imageEffect.페이드_인(images[index].name, 1, 60));
     }
 
     /// <summary>
@@ -96,7 +97,7 @@ public class CutScene : MonoBehaviour
     {
         images[index].active = true;
 
-        StartCoroutine(CoroutinePopUpImage(index));
+        StartCoroutine(CoroutinePopUpDownImage(index));
     }
 
     /// <summary>

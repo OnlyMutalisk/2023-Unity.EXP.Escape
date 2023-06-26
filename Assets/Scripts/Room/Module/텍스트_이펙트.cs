@@ -126,5 +126,9 @@ public class 텍스트_이펙트
             // 다음 조정 까지 스레드 권리 메인에게 양보
             yield return new WaitForSeconds(timePerSet);
         }
+
+        // 컬러 값을 초기화 한 후, 비활성화 합니다.
+        gameObject.GetComponent<Image>().color = originalColor;
+        gameObject.SetActive(false);
     }
 }
