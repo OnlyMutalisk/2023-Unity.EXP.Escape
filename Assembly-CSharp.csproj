@@ -57,25 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
-    <Compile Include="Assets\Scripts\Map0\map0_독백\map0_독백.cs" />
+    <Compile Include="Assets\Scripts\map0_독백.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
-    <Compile Include="Assets\Scripts\Room\MenuOnOff.cs" />
-    <Compile Include="Assets\Scripts\Map0\map0_시작\FadeInOutText.cs" />
-    <Compile Include="Assets\Scripts\Room\InventoryOnOff.cs" />
-    <Compile Include="Assets\Scripts\Begin\ExitButton.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
-    <Compile Include="Assets\Scripts\Begin\MakerButton.cs" />
-    <Compile Include="Assets\Scripts\Begin\StartButton.cs" />
+    <Compile Include="Assets\Scripts\Room\QuickMenu.cs" />
     <Compile Include="Assets\Scripts\Room\RoomName.cs" />
-    <Compile Include="Assets\Scripts\Room\RoadViewOnOff.cs" />
     <Compile Include="Assets\Scripts\Room\Print.cs" />
     <Compile Include="Assets\Scripts\Room\Room.cs" />
     <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
-    <Compile Include="Assets\Scripts\Maker\ScreenButton.cs" />
     <Compile Include="Assets\Scripts\Room\RoomSettings.cs" />
+    <Compile Include="Assets\Scripts\map0_튜토리얼.cs" />
+    <Compile Include="Assets\Scripts\map0_시작.cs" />
+    <Compile Include="Assets\Scripts\Begin.cs" />
+    <Compile Include="Assets\Scripts\Maker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 91666836}
   - component: {fileID: 91666835}
   - component: {fileID: 91666834}
-  - component: {fileID: 91666837}
   m_Layer: 5
   m_Name: ScreenButton
   m_TagString: Untagged
@@ -206,16 +205,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 91666837}
-        m_TargetAssemblyTypeName: ScreenButton, Assembly-CSharp
+      - m_Target: {fileID: 186676472}
+        m_TargetAssemblyTypeName: Maker, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Begin
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &91666835
@@ -256,18 +255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91666832}
   m_CullTransparentMesh: 1
---- !u!114 &91666837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91666832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e33c6f5c576e44fba213f83bb892e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &181144734
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +346,7 @@ GameObject:
   - component: {fileID: 186676470}
   - component: {fileID: 186676469}
   - component: {fileID: 186676468}
+  - component: {fileID: 186676472}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -454,6 +442,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &186676472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186676467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bf48599974648e4c961c3c4876933dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &344353407
 GameObject:
   m_ObjectHideFlags: 0

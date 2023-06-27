@@ -1006,6 +1006,7 @@ MonoBehaviour:
   componentText: {fileID: 905530225}
   gameObjectPanelButton: {fileID: 1733550726}
   gameObjectArrow: {fileID: 933805424}
+  monologueEvent: {fileID: 0}
   intCount: 0
 --- !u!1 &476533767
 GameObject:
@@ -2281,7 +2282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5365351513043940257, guid: 2e5d3e706022bea448034c8e63ef02bd, type: 3}
       propertyPath: nextRoomName
-      value: "map0_\uAC70\uC2E40"
+      value: "map0_\uAC70\uC2E41"
       objectReference: {fileID: 0}
     - target: {fileID: 6557405341073889503, guid: 2e5d3e706022bea448034c8e63ef02bd, type: 3}
       propertyPath: m_Pivot.x
