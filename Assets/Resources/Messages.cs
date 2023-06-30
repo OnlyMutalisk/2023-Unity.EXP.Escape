@@ -15,7 +15,7 @@ public class ObjectMessage
 
 #endregion
 
-public class Messages : MonoBehaviour
+public class Messages
 {
     // 각 오브젝트 상호작용 메시지 모음 입니다.
     public static ObjectMessage TESTOBJECT = new ObjectMessage();

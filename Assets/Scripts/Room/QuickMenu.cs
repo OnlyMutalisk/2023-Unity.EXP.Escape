@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuickMenu : MonoBehaviour
 {
     // 인스펙터에서 연결할 오브젝트 입니다.
     public GameObject[] roadView;
     public GameObject inventory;
-    public GameObject menu;
 
     // 인스펙터에서 연결할 효과음 입니다.
     public AudioSource audioInventoryOpen;
@@ -74,11 +75,13 @@ public class QuickMenu : MonoBehaviour
     /// </summary>
     public void MenuOnOffControl()
     {
+        GameObject gameObjectMenu = GameObject.Find("CanvasDontDestroy").transform.GetChild(0).gameObject;
+
         // 메뉴가 켜져 있다면
-        if (menu.active)
+        if (gameObjectMenu.active)
         {
             // 메뉴를 끕니다.
-            menu.SetActive(false);
+            gameObjectMenu.SetActive(false);
 
             // 메뉴 효과음을 재생합니다.
             audioMenu.Play();
@@ -87,7 +90,7 @@ public class QuickMenu : MonoBehaviour
         else
         {
             // 메뉴를 켭니다.
-            menu.SetActive(true);
+            gameObjectMenu.SetActive(true);
 
             // 메뉴 효과음을 재생합니다.
             audioMenu.Play();

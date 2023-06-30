@@ -18,30 +18,36 @@ public class map0_튜토리얼 : MonoBehaviour
     // 타이머 클릭 시 출력합니다.
     public void ClickTimer()
     {
+        block.active = true;
         print.ObjectPrint("튜토리얼_타이머");
     }
 
     // 로드뷰 온, 오프 버튼 클릭 시 출력합니다.
     public void ClickRoadViewsOnOff()
     {
+        block.active = true;
         print.ObjectPrint("튜토리얼_로드뷰");
     }
 
     // 아이템 온, 오프 버튼 클릭 시 출력합니다.
     public void ClickInventoryOnOff()
     {
+        block.active = true;
         print.ObjectPrint("튜토리얼_인벤토리");
     }
 
     void Update()
     {
-        if (panel.gameObject.active)
+        if (!panel.gameObject.active)
         {
-            block.active = true;
+            StartCoroutine(disableBlock());
         }
-        else
-        {
-            block.active = false;
-        }
+    }
+
+    public IEnumerator disableBlock()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        block.active = false;
     }
 }

@@ -10,9 +10,10 @@ using UnityEditor.VersionControl;
 
 public class Room : MonoBehaviour
 {
-    #region 내부 구현 (private)
-
-    private IEnumerator FadeIn()
+    /// <summary>
+    /// <br>씬을 페이드 인 시킵니다.</br>
+    /// </summary>
+    public IEnumerator FadeIn()
     {
         // 검은 화면 오브젝트인 "FadeInOut" 를 페이드 아웃 하여, 씬을 페이드 인 시킴
         // FadeInOut 오브젝트 선택
@@ -33,18 +34,20 @@ public class Room : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    #endregion
-
-    public AudioSource moveEffectSound;
-    // 퀵슬롯
-
-    // 독백 대사 출력() : 캐릭터 컷신 이미지 팝업
-    // 퀵슬롯() : 로드뷰 & 인벤토리 & 메뉴 & 로드뷰 ON / OFF
-
-    private void Start()
+    /// <summary>
+    /// <br>맵을 변경합니다.</br>
+    /// </summary>
+    public void ChangeMap(int 맵_번호)
     {
-        // moveEffectSound 재생 (자동, 코드 원래 없음)
+        // 현재 맵 번호를 갱신 합니다.
+        GameManager.map = 맵_번호;
 
+        // BGM 을 변경합니다.
+
+    }
+
+    void Start()
+    {
         // 씬을 페이드 인 합니다.
         StartCoroutine(FadeIn());
     }
