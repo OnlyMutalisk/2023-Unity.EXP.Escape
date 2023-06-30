@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Slot
-  - ItemName
   - ItemImage
+  - Key
   layers:
   - Default
   - TransparentFX
