@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    //아이템을 담을 리스트
     public List<Item> items;
-
-    //slot의 부모 bag을 담을 곳
-    [SerializeField]
-    private Transform slotParent;
-
-    //bag의 하위에 등록된 slot을 담을 곳
-    [SerializeField]
+    [SerializeField] private Transform slotParent;
     private Slot[] slots;
+
+//    private bool keyUsed = false;
 
     private void OnValidate()
     {
@@ -27,21 +22,43 @@ public class Inventory : MonoBehaviour
 
     public void FreshSlot()
     {
-        int i = 0;
-        for (; i < items.Count && i < slots.Length; i++)
-            slots[i].item = items[i];
-
-        //빈 슬롯은 null 처리
-        for (; i < slots.Length; i++)
-            slots[i].item = null;
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (i < items.Count)
+                slots[i].UpdateSlot(items[i]);
+            else
+                slots[i].UpdateSlot(null);
+        }
     }
 
-    public void AddItem(Item _item)
+    public void AddItem(Item item)
     {
-        if(items.Count < slots.Length)
+        if (items.Count < slots.Length)
         {
-            items.Add(_item);
+            items.Add(item);
             FreshSlot();
         }
     }
+
+    public void RemoveItem(Item item)
+    {
+        items.Remove(item);
+        FreshSlot();
+    }
+
+    public bool HasKey()
+    {
+        return items.Exists(item => item.itemName == "Key");
+    }
+
+    public void RemoveKey()
+    {
+        Item key = items.Find(item => item.itemName == "Key");
+        if (key != null)
+        {
+            items.Remove(key);
+            FreshSlot();
+        }
+    }
+
 }
