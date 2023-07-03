@@ -10,7 +10,7 @@ public class GameTimer : MonoBehaviour
     public Text GameTimeText;
     public static int round = 3;
     public static bool IsPause;
-
+    
     void Update()
     {
         if (round != 3 && round != 4)

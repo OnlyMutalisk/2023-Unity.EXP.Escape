@@ -6,12 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class map0_시작 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(FadeInOutNextScene());
-    }
-
     /// <summary>
     /// <br>페이드 인 아웃 후 씬을 넘깁니다..</br>
     /// </summary>
@@ -29,5 +23,15 @@ public class map0_시작 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         SceneManager.LoadScene("map0_독백");
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        StartCoroutine(FadeInOutNextScene());
+
+        // 맵을 0 으로 변경합니다.
+        Room room = new Room();
+        room.ChangeMap(0);
     }
 }

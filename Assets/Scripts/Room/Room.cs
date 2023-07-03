@@ -42,8 +42,16 @@ public class Room : MonoBehaviour
         // 현재 맵 번호를 갱신 합니다.
         GameManager.map = 맵_번호;
 
-        // BGM 을 변경합니다.
+        // 맵 번호에 맞는 새로운 BGM 을 찾습니다.
+        AudioClip newAudioClip = Resources.Load<AudioClip>("BGM/map" + 맵_번호.ToString());
 
+        // AudioClip 을 새 BGM 으로 변경합니다.
+        GameObject gameObject = GameObject.Find("BGM Player");
+        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.clip = newAudioClip;
+
+        // 변경한 BGM 을 재생합니다.
+        audioSource.Play();
     }
 
     void Start()
