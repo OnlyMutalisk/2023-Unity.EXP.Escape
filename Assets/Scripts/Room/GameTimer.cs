@@ -10,7 +10,7 @@ public class GameTimer : MonoBehaviour
     public Text GameTimeText;
     public static int round = 3;
     public static bool IsPause;
-    
+
     void Update()
     {
         if (round != 3 && round != 4)
@@ -28,17 +28,19 @@ public class GameTimer : MonoBehaviour
         }
     }
 
-    public void TimerOff()
+    #endregion
+
+    // 타이머를 정지합니다.
+    public static void TimerOff()
     {
         IsPause = true;
     }
 
-    public void TimerOn()
+    // 타이머를 재개합니다.
+    public static void TimerOn()
     {
         IsPause = false;
     }
-
-    #endregion
 
     // 타이머 시간 초과 시 동작할 스크립트 작성
     public void TimerEnd()

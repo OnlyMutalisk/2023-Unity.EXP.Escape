@@ -43,6 +43,9 @@ public class QuickMenu : MonoBehaviour
                 audioRoadView.Play();
             }
         }
+
+        // 인벤토리를 끕니다.
+        inventory.SetActive(false);
     }
 
     /// <summary>
@@ -67,6 +70,13 @@ public class QuickMenu : MonoBehaviour
 
             // 인벤토리 열기 효과음을 재생합니다.
             audioInventoryOpen.Play();
+        }
+
+        // 모든 로드뷰에 대하여,
+        for (int i = 0; i < roadView.Length; i++)
+        {
+            // 로드 뷰를 끕니다.
+            roadView[i].SetActive(false);
         }
     }
 

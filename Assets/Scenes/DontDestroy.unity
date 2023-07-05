@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 205655294}
   - component: {fileID: 205655293}
   - component: {fileID: 205655292}
+  - component: {fileID: 205655295}
   m_Layer: 0
   m_Name: ContinueBtn
   m_TagString: Untagged
@@ -473,10 +474,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 113191499}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 205655295}
+        m_TargetAssemblyTypeName: ContinueBtn, Assembly-CSharp
+        m_MethodName: ClickContinueButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -523,6 +524,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205655290}
   m_CullTransparentMesh: 1
+--- !u!114 &205655295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205655290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f5c6b54ae48244d856de1f448f2b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 113191499}
 --- !u!1 &300005588
 GameObject:
   m_ObjectHideFlags: 0

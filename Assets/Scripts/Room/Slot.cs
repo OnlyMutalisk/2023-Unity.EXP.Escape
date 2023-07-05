@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     [SerializeField] private Image image;
-    [SerializeField] private Button door;
     private Inventory inventory;
     public Item item;
 
@@ -15,15 +14,12 @@ public class Slot : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    
-
-
     public void UpdateSlot(Item newItem)
     {
         item = newItem;
         if (item != null)
         {
-            image.sprite = item.itemImage;
+            image.sprite = item.sprite;
             image.color = Color.white;
         }
         else

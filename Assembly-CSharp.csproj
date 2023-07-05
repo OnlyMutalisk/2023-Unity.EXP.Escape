@@ -60,29 +60,27 @@
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
     <Compile Include="Assets\Scripts\map0_독백.cs" />
     <Compile Include="Assets\Scripts\map0_튜토리얼.cs" />
-    <Compile Include="Assets\Item_Inventory_Object\Scrips\Door.cs" />
-    <Compile Include="Assets\Scripts\Room\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\Room\Inventory\Slot.cs" />
+    <Compile Include="Assets\Scripts\Room\Slot.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
-    <Compile Include="Assets\Item_Inventory_Object\Scrips\Player.cs" />
     <Compile Include="Assets\Scripts\Begin.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
-    <Compile Include="Assets\Scripts\Room\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Room\Inventory.cs" />
     <Compile Include="Assets\Scripts\Room\QuickMenu.cs" />
-    <Compile Include="Assets\Scripts\Room\Inventory\IObjectItem.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\DontDestroy.cs" />
     <Compile Include="Assets\Resources\GameManager.cs" />
     <Compile Include="Assets\Scripts\Room\RoomName.cs" />
-    <Compile Include="Assets\Scripts\Room\Inventory\ObjectItem.cs" />
     <Compile Include="Assets\Scripts\Room\Print.cs" />
     <Compile Include="Assets\Scripts\Room\Room.cs" />
     <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Maker.cs" />
+    <Compile Include="Assets\Resources\Items.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy\ContinueBtn.cs" />
+    <Compile Include="Assets\Scripts\Room\Object.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

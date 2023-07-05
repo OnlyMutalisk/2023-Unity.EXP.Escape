@@ -10,40 +10,6 @@ using UnityEditor.VersionControl;
 
 public class Room : MonoBehaviour
 {
-    #region Player 스크립트
-
-    public Inventory inventory;
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
-
-            if (hit.collider != null)
-            {
-                HitCheckObject(hit);
-            }
-        }
-    }
-
-    void HitCheckObject(RaycastHit2D hit)
-    {
-        IObjectItem clickInterface = hit.transform.gameObject.GetComponent<IObjectItem>();
-
-        if (clickInterface != null)
-        {
-            Item item = clickInterface.ClickItem();
-            inventory.AddItem(item);
-
-            //아이템 삭제
-            Destroy(hit.transform.gameObject);
-        }
-    }
-
-    #endregion
-
     /// <summary>
     /// <br>씬을 페이드 인 시킵니다.</br>
     /// </summary>
@@ -69,15 +35,30 @@ public class Room : MonoBehaviour
     }
 
     /// <summary>
-    /// <br>맵을 변경합니다.</br>
+    /// <br>맵을 변경합니다. 로비의 맵 번호는 99 입니다.</br>
     /// </summary>
-    public void ChangeMap(int 맵_번호)
+    public static void ChangeMap(int 맵_번호)
     {
+        // 인벤토리를 초기화 합니다.
+        Inventory.inventory.Clear();
+
         // 현재 맵 번호를 갱신 합니다.
         GameManager.map = 맵_번호;
 
-        // 맵 번호에 맞는 새로운 BGM 을 찾습니다.
-        AudioClip newAudioClip = Resources.Load<AudioClip>("BGM/map" + 맵_번호.ToString());
+        // 맵 번호에 맞는 BGM 경로를 지정합니다.
+        string path;
+
+        if (맵_번호 == 99)
+        {
+            path = "lobby";
+        }
+        else
+        {
+            path = 맵_번호.ToString();
+        }
+
+        // 지정한 경로의 BGM 을 가져옵니다
+        AudioClip newAudioClip = Resources.Load<AudioClip>("Sounds/BGM/map" + path);
 
         // AudioClip 을 새 BGM 으로 변경합니다.
         GameObject gameObject = GameObject.Find("BGM Player");

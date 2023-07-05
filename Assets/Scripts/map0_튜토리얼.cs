@@ -9,9 +9,10 @@ public class map0_튜토리얼 : MonoBehaviour
     public GameObject panel;
     public GameObject block;
 
-    // 튜토리얼 입장 시 메시지를 출력합니다.
     void Start()
     {
+        // 튜토리얼 입장 시 메시지를 출력합니다.
+        block.active = true;
         print.ObjectPrint("튜토리얼");
     }
 
@@ -40,14 +41,7 @@ public class map0_튜토리얼 : MonoBehaviour
     {
         if (!panel.gameObject.active)
         {
-            StartCoroutine(disableBlock());
+            block.active = false;
         }
-    }
-
-    public IEnumerator disableBlock()
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        block.active = false;
     }
 }

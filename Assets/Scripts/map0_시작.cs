@@ -31,7 +31,6 @@ public class map0_시작 : MonoBehaviour
         StartCoroutine(FadeInOutNextScene());
 
         // 맵을 0 으로 변경합니다.
-        Room room = new Room();
-        room.ChangeMap(0);
+        Room.ChangeMap(0);
     }
 }
