@@ -10,6 +10,40 @@ using UnityEditor.VersionControl;
 
 public class Room : MonoBehaviour
 {
+    #region Player 스크립트
+
+    public Inventory inventory;
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                HitCheckObject(hit);
+            }
+        }
+    }
+
+    void HitCheckObject(RaycastHit2D hit)
+    {
+        IObjectItem clickInterface = hit.transform.gameObject.GetComponent<IObjectItem>();
+
+        if (clickInterface != null)
+        {
+            Item item = clickInterface.ClickItem();
+            inventory.AddItem(item);
+
+            //아이템 삭제
+            Destroy(hit.transform.gameObject);
+        }
+    }
+
+    #endregion
+
     /// <summary>
     /// <br>씬을 페이드 인 시킵니다.</br>
     /// </summary>
@@ -27,10 +61,10 @@ public class Room : MonoBehaviour
 
         // 이제 FadeInOut 오브젝트를 RoomSettings 에 정의된 시간 동안 페이드 아웃
         이미지_이펙트 imageEffect = new 이미지_이펙트();
-        StartCoroutine(imageEffect.페이드_아웃("FadeInOut", RoomSettings.floatSceneFadeInOutTime, 60));
+        StartCoroutine(imageEffect.페이드_아웃("FadeInOut", GameManager.floatSceneFadeInOutTime, 60));
 
         // time 초 동안 대기 후, FadeInOut 오브젝트를 비활성화 시켜 다른 오브젝트를 가리지 않게 함.
-        yield return new WaitForSeconds(RoomSettings.floatSceneFadeInOutTime * (float)1.5);
+        yield return new WaitForSeconds(GameManager.floatSceneFadeInOutTime * (float)1.5);
         gameObject.SetActive(false);
     }
 
