@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\map0_튜토리얼.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy\ContinueBtn.cs" />
     <Compile Include="Assets\Scripts\Room\Slot.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
@@ -73,14 +74,13 @@
     <Compile Include="Assets\Resources\GameManager.cs" />
     <Compile Include="Assets\Scripts\Room\RoomName.cs" />
     <Compile Include="Assets\Scripts\Room\Print.cs" />
+    <Compile Include="Assets\Resources\Items.cs" />
+    <Compile Include="Assets\Scripts\Room\Object.cs" />
     <Compile Include="Assets\Scripts\Room\Room.cs" />
     <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Maker.cs" />
-    <Compile Include="Assets\Resources\Items.cs" />
-    <Compile Include="Assets\Scripts\DontDestroy\ContinueBtn.cs" />
-    <Compile Include="Assets\Scripts\Room\Object.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

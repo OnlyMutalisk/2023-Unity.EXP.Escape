@@ -18,6 +18,15 @@ public class Print : MonoBehaviour
     Color originalTitleColor = new Color(255, 255, 255, 1);
     Color originalMessageColor = new Color(255, 255, 255, 1);
 
+    // 프린트 오브젝트 초기 위치 저장
+    public Vector2 originalTransform;
+
+    public void Start()
+    {
+        originalTransform = gameObject.GetComponent<RectTransform>().anchoredPosition;
+    }
+
+
     private ObjectMessage Load(string objectName)
     {
         // 리플렉션 (변수명으로 속성 접근) 을 위한 코드입니다.
@@ -86,6 +95,9 @@ public class Print : MonoBehaviour
         gameObjectMessage.SetActive(false);
 
         flag = true;
+
+        // 프린트 오브젝트를 초기 위치로 이동시킵니다.
+        gameObject.GetComponent<RectTransform>().anchoredPosition = originalTransform;
     }
 
     #endregion

@@ -105,5 +105,15 @@ public class QuickMenu : MonoBehaviour
             // 메뉴 효과음을 재생합니다.
             audioMenu.Play();
         }
+
+        // 인벤토리를 끕니다.
+        inventory.SetActive(false);
+
+        // 모든 로드뷰에 대하여,
+        for (int i = 0; i < roadView.Length; i++)
+        {
+            // 로드 뷰를 끕니다.
+            roadView[i].SetActive(false);
+        }
     }
 }
