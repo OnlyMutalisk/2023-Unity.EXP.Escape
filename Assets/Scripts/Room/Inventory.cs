@@ -2,14 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+    // 인벤토리에 저장되어있는 아이템 리스트 입니다.
+    public static List<Item> inventory = new List<Item>();
+
+    // 현재 선택된 아이템 입니다.
+    public string currentSlotItemName;
+
     #region 내부 구현
 
-    public static List<Item> inventory = new List<Item>();
     [SerializeField] private Transform slotParent;
     private Slot[] slots;
+
+    // 슬롯 클릭 이벤트를 위한 객체 입니다.
+    public Image[] imageSlots;
+    public Image[] imageSlotsItems;
+
+    // 슬롯 클릭시 이벤트 입니다. 매개변수는 index번째 슬롯을 클릭했음을 의미합니다.
+    public void ClickSlot(int index)
+    {
+        // 모든 슬롯을 초기 상태 컬러로 설정합니다.
+        foreach (var imageSlot in imageSlots)
+        {
+            imageSlot.color = new Color(255, 255, 255, 0.560784f);
+        }
+
+        // 현재 슬롯에 아이템이 존재한다면,
+        if(imageSlotsItems[index].sprite != null)
+        {
+            // 현재 슬롯의 아이템을 기록합니다.
+            currentSlotItemName = imageSlotsItems[index].sprite.name;
+
+            // 현재 슬롯의 컬러만 빨갛게 칠합니다.
+            imageSlots[index].color = new Color(255, 0, 0, 0.560784f);
+        }
+    }
 
     private void OnValidate()
     {
