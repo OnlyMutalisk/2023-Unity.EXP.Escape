@@ -81,6 +81,7 @@
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Maker.cs" />
+    <Compile Include="Assets\Scripts\Room\StopWatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

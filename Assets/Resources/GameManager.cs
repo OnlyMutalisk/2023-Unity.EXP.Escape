@@ -12,6 +12,5 @@ public class GameManager : MonoBehaviour
     public static int map = 0;
 
     // 각 맵의 제한시간 입니다. 제한시간이 없다면 9999로 설정합니다.
-    public static float[] gameTime = {9999, 0, 1000, 1000};
-
+    public static float[] gameTime = {60, 9999, 1000, 1000};
 }

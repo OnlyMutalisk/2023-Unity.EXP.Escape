@@ -50,6 +50,6 @@ public class GameTimer : MonoBehaviour
     // 타이머 시간 초과 시 동작할 스크립트 작성
     public void TimerEnd()
     {
-
+        IsPause = true;
     }
 }
