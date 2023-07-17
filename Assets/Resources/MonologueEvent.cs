@@ -17,114 +17,103 @@ public class MonologueEvent : MonoBehaviour
     /// <br>여기에 이벤트 발생 시 작동할 코드를 입력합니다.</br>
     /// <br>각 케이스는 독백 텍스트의 index 입니다.</br>
     /// </summary>
-    public void Event()
+    public void Event(string messageName)
     {
-        switch (SceneManager.GetActiveScene().name)
+        switch (messageName)
         {
-            // Room 씬에서
+            // 로드뷰_잠김 메시지에서
+            case "로드뷰_잠김":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 텍스트 [0] 일 때 발생할 이벤트
+                    case 0:
+                        cutScene.PopUpImage(1, 0);
+                        break;
+
+                    // 독백을 닫을 때 발생할 이벤트
+                    case 1:
+                        cutScene.PopDownImage(1, 0);
+                        break;
+                }
+                break;
+
+
+            // Room 메시지에서
             case "Room":
                 switch (Monologue.monologueEventFlag)
                 {
                     // 독백 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.FadeOutBackground();
-                        cutScene.PopUpImage(0);
+                        cutScene.PopUpImage(1, 1);
                         break;
 
                     // 독백 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        cutScene.PopUpImage(1);
+                        cutScene.PopUpImage(2, 1);
                         break;
 
                     // 독백 텍스트 [2] 일 때 발생할 이벤트
                     case 2:
-                        cutScene.ShakeImage(0);
-                        cutScene.PopUpImage(2);
+                        cutScene.ShakeImage(1);
+                        cutScene.PopUpImage(3, 1);
                         break;
 
                     // 독백 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        cutScene.ShakeImage(1);
-                        cutScene.PopDownImage(0);
+                        cutScene.ShakeImage(2);
+                        cutScene.PopDownImage(1, 1);
                         break;
 
                     // 독백 텍스트 [4] 일 때 발생할 이벤트
                     case 4:
-                        cutScene.PopDownImage(1);
+                        cutScene.PopDownImage(2, 1);
                         break;
 
                     // 독백 텍스트 [5] 일 때 발생할 이벤트
                     case 5:
                         cutScene.FadeInBackground();
-                        cutScene.PopDownImage(2);
+                        cutScene.PopDownImage(3, 1);
                         break;
                 }
                 break;
 
-            // map0_거실1 씬에서
+            // map0_거실1 메시지에서
             case "map0_거실1":
                 switch (Monologue.monologueEventFlag)
                 {
                     // 독백 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.FadeOutBackground();
-                        cutScene.PopUpImage(0);
+                        cutScene.PopUpImage(1, 1);
                         break;
 
                     // 독백 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        cutScene.PopUpImage(1);
+                        cutScene.PopUpImage(2, 1);
                         break;
 
                     // 독백 텍스트 [2] 일 때 발생할 이벤트
                     case 2:
-                        cutScene.ShakeImage(0);
-                        cutScene.PopUpImage(2);
+                        cutScene.ShakeImage(1);
+                        cutScene.PopUpImage(3, 1);
                         break;
 
                     // 독백 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        cutScene.ShakeImage(1);
-                        cutScene.PopDownImage(0);
+                        cutScene.ShakeImage(2);
+                        cutScene.PopDownImage(1, 1);
                         break;
 
                     // 독백 텍스트 [4] 일 때 발생할 이벤트
                     case 4:
-                        cutScene.PopDownImage(1);
+                        cutScene.PopDownImage(2, 1);
                         break;
 
                     // 독백 텍스트 [5] 일 때 발생할 이벤트
                     case 5:
                         cutScene.FadeInBackground();
-                        cutScene.PopDownImage(2);
-                        break;
-                }
-                break;
-
-            // "test" 씬에서
-            case "test":
-                switch (Monologue.monologueEventFlag)
-                {
-                    // 독백 텍스트 [0] 일 때 발생할 이벤트
-                    case 0:
-                        break;
-
-                    case 1:
-                        break;
-
-                    case 2:
-                        break;
-
-                    case 3:
-                        break;
-
-                    case 4:
-                        break;
-
-                    case 5:
-                        break;
-
-                    case 6:
+                        cutScene.PopDownImage(3, 1);
                         break;
                 }
                 break;

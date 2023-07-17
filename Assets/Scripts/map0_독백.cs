@@ -15,16 +15,16 @@ public class map0_독백 : MonoBehaviour
     void Start()
     {
         // 1.5 초 대기 후 독백 출력
-        StartCoroutine(IEnumeratorPrintMonologue());
+        StartCoroutine(IEnumeratorPrintMonologue("map0_독백"));
     }
 
-    IEnumerator IEnumeratorPrintMonologue()
+    IEnumerator IEnumeratorPrintMonologue(string messageName)
     {
         // 1.5 초 대기
         yield return new WaitForSeconds(1.5f);
 
         // 독백 출력 후 코루틴 종료
-        monologue.PrintMonologue();
+        monologue.PrintMonologue(messageName);
         flag = true;
         yield break;
     }

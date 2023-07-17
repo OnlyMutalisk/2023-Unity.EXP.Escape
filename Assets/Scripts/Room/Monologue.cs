@@ -9,7 +9,6 @@ using UnityEditor;
 
 public class Monologue : MonoBehaviour
 {
-
     #region 내부 구현
 
     // 코루틴 동기화 플래그 입니다.
@@ -31,8 +30,11 @@ public class Monologue : MonoBehaviour
     // 각 글자 시간 간격을 설정 합니다.
     private float floatTypingSpeed = 0.1f;
 
+    // 가장 최근에 출력된 독백 메시지 이름 입니다.
+    private static string lastMessageName;
+
     // 독백 덩어리를 출력합니다.
-    private IEnumerator IEnumeratorPrintMonologue(LinkedList<string> 독백)
+    private IEnumerator IEnumeratorPrintMonologue(LinkedList<string> 독백, string messageName)
     {
         // 코루틴 접근을 차단합니다.
         boolCoroutineSynchronizeFlag = false;
@@ -44,7 +46,7 @@ public class Monologue : MonoBehaviour
         if (intCount < 독백.Count)
         {
             // 독백 이벤트를 발생시킵니다.
-            monologueEvent.Event();
+            monologueEvent.Event(messageName);
 
             // 독백 이벤트 플래그를 갱신합니다.
             monologueEventFlag++;
@@ -96,6 +98,9 @@ public class Monologue : MonoBehaviour
         // 모두 다 출력을 완료 했다면
         else
         {
+            // 마지막 이벤트를 발생시킵니다.
+            monologueEvent.Event(messageName);
+
             // 독백 이벤트 플래그를 초기화 합니다.
             monologueEventFlag = 0;
 
@@ -189,14 +194,14 @@ public class Monologue : MonoBehaviour
     #endregion
 
     /// <summary>
-    /// <br>현재 씬에 해당하는 독백 메시지를 순차 출력합니다.</br>
+    /// <br>지정한 이름의 독백 메시지를 순차 출력합니다.</br>
     /// </summary>
-    public void PrintMonologue()
+    public void PrintMonologue(string messageName)
     {
-        // 현재 씬의 이름을 가져옵니다.
-        string messageName = SceneManager.GetActiveScene().name;
+        // 가장 최근 출력된 메시지가 무엇인지 기록합니다.
+        lastMessageName = messageName;
 
-        // 리플렉션을 통해 현재 씬 이름에 해당하는 독백 메시지에 접근합니다.
+        // 리플렉션을 통해 지정한 이름의 독백 메시지에 접근합니다.
         Messages messages = new Messages();
         FieldInfo fieldInfo = typeof(Messages).GetField(messageName);
         LinkedList<string> message = fieldInfo.GetValue(messages) as LinkedList<string>;
@@ -205,7 +210,15 @@ public class Monologue : MonoBehaviour
 
         if (boolCoroutineSynchronizeFlag == true)
         {
-            StartCoroutine(IEnumeratorPrintMonologue(message));
+            StartCoroutine(IEnumeratorPrintMonologue(message, messageName));
         }
+    }
+
+    /// <summary>
+    /// 독백 패널 터치 시, 마지막으로 출력되고 있던 메시지를 이어서 출력합니다.
+    /// </summary>
+    public void TouchMonologuePanel()
+    {
+        PrintMonologue(lastMessageName);
     }
 }

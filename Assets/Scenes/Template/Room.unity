@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 176672606}
   - component: {fileID: 176672605}
   m_Layer: 0
-  m_Name: ItemImage
+  m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2033,9 +2033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0871c0dc3ecd58d4cbf4f9b00bedb0e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roadView:
-  - {fileID: 1977775617}
-  - {fileID: 1138822878}
+  roadViews: {fileID: 1447483911}
   inventory: {fileID: 682240076}
   audioInventoryOpen: {fileID: 1783490772}
   audioInventoryClose: {fileID: 1216022835}
@@ -2960,7 +2958,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1574610433}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3035,7 +3033,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1574610433}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
@@ -3671,7 +3669,7 @@ RectTransform:
   m_GameObject: {fileID: 1138822878}
   m_LocalRotation: {x: -0, y: -0, z: 0.7510211, w: 0.6602782}
   m_LocalPosition: {x: 0, y: 0, z: -83.36153}
-  m_LocalScale: {x: 2.4000003, y: 2.4000003, z: 2.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1447483912}
   m_RootOrder: 1
@@ -3679,7 +3677,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 608, y: -193}
-  m_SizeDelta: {x: 73.8038, y: 69.3379}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1138822878
 GameObject:
@@ -3693,7 +3691,6 @@ GameObject:
   - component: {fileID: 1138822882}
   - component: {fileID: 1138822881}
   - component: {fileID: 1138822880}
-  - component: {fileID: 1138822879}
   m_Layer: 4
   m_Name: RoadView
   m_TagString: Untagged
@@ -3701,19 +3698,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1138822879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138822878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1911b749c41a448a564fb401386b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextRoomName: "map0_\uBCF5\uB3C41"
 --- !u!114 &1138822880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3758,16 +3742,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1138822879}
-        m_TargetAssemblyTypeName: RoadView, Assembly-CSharp
+      - m_Target: {fileID: 1447483913}
+        m_TargetAssemblyTypeName: RoadViews, Assembly-CSharp
         m_MethodName: Move
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "map0_\uBCF5\uB3C41"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1138822881
@@ -4293,6 +4277,81 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1314865352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1314865353}
+  - component: {fileID: 1314865355}
+  - component: {fileID: 1314865354}
+  m_Layer: 0
+  m_Name: Locked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1314865353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314865352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574610433}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -4, y: 14}
+  m_SizeDelta: {x: 1252.0237, y: -299.609}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1314865354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314865352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0ef7fa60b8de10c4a9fb8e976a5e54bd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1314865355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314865352}
+  m_CullTransparentMesh: 1
 --- !u!1 &1355976805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,6 +4639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1447483912}
+  - component: {fileID: 1447483913}
   m_Layer: 0
   m_Name: RoadViews
   m_TagString: Untagged
@@ -4603,6 +4663,21 @@ Transform:
   m_Father: {fileID: 1749765824}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1447483913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447483911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd7bc61e48819b45896cb006d963c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutScene: {fileID: 1574610434}
+  print: {fileID: 476533769}
+  monologue: {fileID: 410914225}
 --- !u!1 &1477707026
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,7 +4897,7 @@ GameObject:
   - component: {fileID: 1552317091}
   - component: {fileID: 1552317090}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: WatchPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4914,6 +4989,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 176672604}
+  - {fileID: 1314865353}
   - {fileID: 970908571}
   - {fileID: 1761638187}
   - {fileID: 936493377}
@@ -4937,11 +5013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad6df631ca64fe4bb8b2e1dff1cbb38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemImage: {fileID: 176672603}
-  images:
-  - {fileID: 970908570}
-  - {fileID: 1761638186}
-  - {fileID: 936493376}
   fadeInOutPanel: {fileID: 295693385}
 --- !u!1 &1685307199
 GameObject:
@@ -5308,7 +5379,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410914225}
         m_TargetAssemblyTypeName: Monologue, Assembly-CSharp
-        m_MethodName: PrintMonologue
+        m_MethodName: TouchMonologuePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5424,7 +5495,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1574610433}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -5913,7 +5984,6 @@ GameObject:
   - component: {fileID: 1977775621}
   - component: {fileID: 1977775620}
   - component: {fileID: 1977775619}
-  - component: {fileID: 1977775618}
   m_Layer: 4
   m_Name: RoadView
   m_TagString: Untagged
@@ -5921,19 +5991,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1977775618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977775617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1911b749c41a448a564fb401386b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextRoomName: "map0_\uBCF5\uB3C41"
 --- !u!114 &1977775619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5978,16 +6035,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1977775618}
-        m_TargetAssemblyTypeName: RoadView, Assembly-CSharp
+      - m_Target: {fileID: 1447483913}
+        m_TargetAssemblyTypeName: RoadViews, Assembly-CSharp
         m_MethodName: Move
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "map0_\uAC70\uC2E41"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1977775620
@@ -6188,7 +6245,7 @@ RectTransform:
   m_GameObject: {fileID: 1977775617}
   m_LocalRotation: {x: -0, y: -0, z: 0.8211022, w: -0.5707813}
   m_LocalPosition: {x: 0, y: 0, z: -83.36153}
-  m_LocalScale: {x: 2.4000003, y: 2.4000003, z: 2.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1447483912}
   m_RootOrder: 0
@@ -6196,5 +6253,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -169, y: -173}
-  m_SizeDelta: {x: 73.8038, y: 69.3379}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}

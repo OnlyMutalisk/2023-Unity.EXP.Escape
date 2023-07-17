@@ -6,8 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class QuickMenu : MonoBehaviour
 {
+    #region 내부 구현
+
+    private GameObject[] roadView;
+
+    // RoadViews 오브젝트 하위의 모든 로드뷰를 가져옵니다.
+    public void Start()
+    {
+        int length = roadViews.transform.childCount;
+
+        roadView = new GameObject[length];
+
+        for (int i = 0; i < length; i++)
+        {
+            roadView[i] = roadViews.transform.GetChild(i).gameObject;
+        }
+    }
+
+    #endregion
+
     // 인스펙터에서 연결할 오브젝트 입니다.
-    public GameObject[] roadView;
+    public GameObject roadViews;
     public GameObject inventory;
 
     // 인스펙터에서 연결할 효과음 입니다.

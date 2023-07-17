@@ -33,7 +33,7 @@ public class Object : MonoBehaviour
 
         // 아이템 이미지를 N초 동안 출력합니다.
         print.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
-        cutScene.PopUpDownImage(99, 1.5f);
+        cutScene.PopUpDownImage(0, 1.5f);
 
         // 아이템 획득 시 대사를 출력합니다.
         

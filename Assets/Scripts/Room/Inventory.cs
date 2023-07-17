@@ -39,6 +39,12 @@ public class Inventory : MonoBehaviour
             // 현재 슬롯의 컬러만 빨갛게 칠합니다.
             imageSlots[index].color = new Color(255, 0, 0, 0.560784f);
         }
+        // 현재 슬롯에 아이템이 존재하지 않는다면,
+        else
+        {
+            // 현재 선택된 아이템을 "" 로 리셋
+            currentSlotItemName = "";
+        }
     }
 
     private void OnValidate()

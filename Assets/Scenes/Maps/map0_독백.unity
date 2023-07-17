@@ -414,7 +414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51abb74e389ec2149b63954ff2d0b7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveEffectSound: {fileID: 0}
 --- !u!114 &632479732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,7 +829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 410914225}
         m_TargetAssemblyTypeName: Monologue, Assembly-CSharp
-        m_MethodName: PrintMonologue
+        m_MethodName: TouchMonologuePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

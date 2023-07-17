@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Room\Slot.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
+    <Compile Include="Assets\Scripts\Room\StopWatch.cs" />
     <Compile Include="Assets\Scripts\Begin.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
     <Compile Include="Assets\Scripts\Room\Inventory.cs" />
@@ -77,11 +78,12 @@
     <Compile Include="Assets\Resources\Items.cs" />
     <Compile Include="Assets\Scripts\Room\Object.cs" />
     <Compile Include="Assets\Scripts\Room\Room.cs" />
-    <Compile Include="Assets\Scripts\Room\RoadView.cs" />
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Maker.cs" />
-    <Compile Include="Assets\Scripts\Room\StopWatch.cs" />
+    <Compile Include="Assets\Scripts\Room\RoadViews.cs" />
+    <Compile Include="Assets\Resources\LockedRoadViews.cs" />
+    <Compile Include="Assets\Resources\LockedRoadViewsEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
