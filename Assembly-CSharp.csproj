@@ -57,15 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\map0_시작.cs" />
+    <Compile Include="Assets\Resources\LockedRoadViewsEvents.cs" />
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
     <Compile Include="Assets\Scripts\map0_독백.cs" />
     <Compile Include="Assets\Scripts\map0_튜토리얼.cs" />
+    <Compile Include="Assets\Scripts\Room\RoadViews.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\SoundManager.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\ContinueBtn.cs" />
     <Compile Include="Assets\Scripts\Room\Slot.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Resources\Messages.cs" />
+    <Compile Include="Assets\Resources\LockedRoadViews.cs" />
     <Compile Include="Assets\Scripts\Room\StopWatch.cs" />
     <Compile Include="Assets\Scripts\Begin.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
@@ -81,9 +84,6 @@
     <Compile Include="Assets\Resources\MonologueEvent.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Scripts\Maker.cs" />
-    <Compile Include="Assets\Scripts\Room\RoadViews.cs" />
-    <Compile Include="Assets\Resources\LockedRoadViews.cs" />
-    <Compile Include="Assets\Resources\LockedRoadViewsEvents.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
