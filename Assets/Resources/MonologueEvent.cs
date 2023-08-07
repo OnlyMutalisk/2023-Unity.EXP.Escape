@@ -38,42 +38,42 @@ public class MonologueEvent : MonoBehaviour
                 break;
 
 
-            // Room 메시지에서
-            case "Room":
+            // 독백_테스트 메시지에서
+            case "독백_테스트":
                 switch (Monologue.monologueEventFlag)
                 {
                     // 독백 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.FadeOutBackground();
-                        cutScene.PopUpImage(1, 1);
+                        cutScene.PopUpImage(2, 1);
                         break;
 
                     // 독백 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        cutScene.PopUpImage(2, 1);
+                        cutScene.PopUpImage(3, 1);
                         break;
 
                     // 독백 텍스트 [2] 일 때 발생할 이벤트
                     case 2:
-                        cutScene.ShakeImage(1);
-                        cutScene.PopUpImage(3, 1);
+                        cutScene.ShakeImage(2);
+                        cutScene.PopUpImage(4, 1);
                         break;
 
                     // 독백 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        cutScene.ShakeImage(2);
-                        cutScene.PopDownImage(1, 1);
+                        cutScene.ShakeImage(3);
+                        cutScene.PopDownImage(2, 1);
                         break;
 
                     // 독백 텍스트 [4] 일 때 발생할 이벤트
                     case 4:
-                        cutScene.PopDownImage(2, 1);
+                        cutScene.PopDownImage(3, 1);
                         break;
 
                     // 독백 텍스트 [5] 일 때 발생할 이벤트
                     case 5:
                         cutScene.FadeInBackground();
-                        cutScene.PopDownImage(3, 1);
+                        cutScene.PopDownImage(4, 1);
                         break;
                 }
                 break;

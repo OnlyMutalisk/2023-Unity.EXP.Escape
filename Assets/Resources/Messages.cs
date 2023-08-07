@@ -26,10 +26,13 @@ public class Messages
 
     // 각 독백 메시지 덩어리 모음 입니다.
     public static LinkedList<string> 로드뷰_잠김 = new LinkedList<string>();
-    public static LinkedList<string> Room = new LinkedList<string>();
+    public static LinkedList<string> 독백_테스트 = new LinkedList<string>();
     public static LinkedList<string> map0_독백 = new LinkedList<string>();
     public static LinkedList<string> map0_거실1 = new LinkedList<string>();
     public static LinkedList<string> map0_복도1 = new LinkedList<string>();
+
+    // 각 대화 메시지 덩어리 모음 입니다.
+    public static LinkedList<string> 대화_테스트 = new LinkedList<string>();
 
     static Messages()
     {
@@ -67,14 +70,14 @@ public class Messages
         // "로드뷰_잠김" 의 독백 대사 입니다.
         로드뷰_잠김.AddLast("아무래도 문이 잠긴 것 같다.");
 
-        // "Room" 의 독백 대사 입니다.
-        Room.AddLast("1~");
-        Room.AddLast("2~");
-        Room.AddLast("3~");
-        Room.AddLast("4~");
-        Room.AddLast("5~");
-        Room.AddLast("6~");
-        Room.AddLast("마지막");
+        // "독백_테스트" 의 독백 대사 입니다.
+        독백_테스트.AddLast("독백 테스트 대사 1");
+        독백_테스트.AddLast("독백 테스트 대사 2");
+        독백_테스트.AddLast("독백 테스트 대사 3");
+        독백_테스트.AddLast("독백 테스트 대사 4");
+        독백_테스트.AddLast("독백 테스트 대사 5");
+        독백_테스트.AddLast("독백 테스트 대사 6");
+        독백_테스트.AddLast("독백 테스트 대사 마지막");
 
         // "map0_독백" 의 독백 대사 입니다.
         map0_독백.AddLast("주인공 독백 1");
@@ -94,6 +97,15 @@ public class Messages
         map0_복도1.AddLast("ㅇㅇ~");
         map0_복도1.AddLast("ㅋㅋ~");
         map0_복도1.AddLast("ㄷㄷ");
+
+        #endregion
+
+        #region 대화 메시지
+
+        // "대화_테스트" 의 대화 대사 입니다.
+        대화_테스트.AddLast("대화 테스트 대사 1");
+        대화_테스트.AddLast("대화 테스트 대사 2");
+        대화_테스트.AddLast("대화 테스트 대사 3");
 
         #endregion
     }
