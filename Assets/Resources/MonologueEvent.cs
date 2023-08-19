@@ -1,8 +1,10 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using UnityEditor.VersionControl;
 using UnityEditorInternal;
 using UnityEngine;
@@ -10,8 +12,10 @@ using UnityEngine.SceneManagement;
 
 public class MonologueEvent : MonoBehaviour
 {
-    // 인스펙터에서 연결하며, 이벤트에서 사용할 컷신 관리 오브젝트 입니다.
+    // 인스펙터에서 연결하며, 이벤트에서 사용할 오브젝트 입니다.
     public CutScene cutScene;
+    public Monologue monologue;
+    public Monologue dialogue;
 
     /// <summary>
     /// <br>여기에 이벤트 발생 시 작동할 코드를 입력합니다.</br>
@@ -21,11 +25,10 @@ public class MonologueEvent : MonoBehaviour
     {
         switch (messageName)
         {
-            // 로드뷰_잠김 메시지에서
             case "로드뷰_잠김":
                 switch (Monologue.monologueEventFlag)
                 {
-                    // 독백 텍스트 [0] 일 때 발생할 이벤트
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.PopUpImage(1, 0);
                         break;
@@ -37,86 +40,63 @@ public class MonologueEvent : MonoBehaviour
                 }
                 break;
 
-
-            // 독백_테스트 메시지에서
-            case "독백_테스트":
+            case "map0_N08_침실문":
                 switch (Monologue.monologueEventFlag)
                 {
-                    // 독백 텍스트 [0] 일 때 발생할 이벤트
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
-                        cutScene.FadeOutBackground();
-                        cutScene.PopUpImage(2, 1);
+                        cutScene.PopUpImage(0, 0);
                         break;
 
-                    // 독백 텍스트 [1] 일 때 발생할 이벤트
-                    case 1:
-                        cutScene.PopUpImage(3, 1);
-                        break;
-
-                    // 독백 텍스트 [2] 일 때 발생할 이벤트
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
                     case 2:
-                        cutScene.ShakeImage(2);
-                        cutScene.PopUpImage(4, 1);
+                        cutScene.PopDownImage(0, 0);
+                        SceneManager.LoadScene("map0_N07");
+                        break;
+                }
+                break;
+                break;
+
+            case "map0_N04_침실창문":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/Object/" + "locked_door");
+                        GameManager.boolMap0_N04_Flag = false;
+                        audioSource.Play();
                         break;
 
-                    // 독백 텍스트 [3] 일 때 발생할 이벤트
+                    // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        cutScene.ShakeImage(3);
-                        cutScene.PopDownImage(2, 1);
-                        break;
-
-                    // 독백 텍스트 [4] 일 때 발생할 이벤트
-                    case 4:
-                        cutScene.PopDownImage(3, 1);
-                        break;
-
-                    // 독백 텍스트 [5] 일 때 발생할 이벤트
-                    case 5:
-                        cutScene.FadeInBackground();
-                        cutScene.PopDownImage(4, 1);
+                        SceneManager.LoadScene("map0_N03");
+                        LockedRoadViews.lockedRoadViews.Add("map0_N03>>map0_N07");
+                        GameManager.boolMap0_N03_Flag = true;
                         break;
                 }
                 break;
 
-            // map0_거실1 메시지에서
-            case "map0_거실1":
+            case "map0_N05_세탁기":
                 switch (Monologue.monologueEventFlag)
                 {
-                    // 독백 텍스트 [0] 일 때 발생할 이벤트
-                    case 0:
-                        cutScene.FadeOutBackground();
-                        cutScene.PopUpImage(1, 1);
-                        break;
-
-                    // 독백 텍스트 [1] 일 때 발생할 이벤트
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        cutScene.PopUpImage(2, 1);
-                        break;
-
-                    // 독백 텍스트 [2] 일 때 발생할 이벤트
-                    case 2:
-                        cutScene.ShakeImage(1);
-                        cutScene.PopUpImage(3, 1);
-                        break;
-
-                    // 독백 텍스트 [3] 일 때 발생할 이벤트
-                    case 3:
-                        cutScene.ShakeImage(2);
-                        cutScene.PopDownImage(1, 1);
-                        break;
-
-                    // 독백 텍스트 [4] 일 때 발생할 이벤트
-                    case 4:
-                        cutScene.PopDownImage(2, 1);
-                        break;
-
-                    // 독백 텍스트 [5] 일 때 발생할 이벤트
-                    case 5:
-                        cutScene.FadeInBackground();
-                        cutScene.PopDownImage(3, 1);
+                        SceneManager.LoadScene("map0_C01");
                         break;
                 }
                 break;
+
+            case "map0_C01_컷신3":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        monologue.PrintMonologue("map0_C01_컷신4");
+                        break;
+                }
+                break;
+
         }
     }
 }

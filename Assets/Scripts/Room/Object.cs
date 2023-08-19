@@ -10,6 +10,7 @@ public class Object : MonoBehaviour
     public AudioSource audioSource;
     public CutScene cutScene;
     public Print print;
+    public Monologue monologue_or_Dialogue;
     public Inventory inventory;
     public Image itemImage;
 
@@ -41,5 +42,10 @@ public class Object : MonoBehaviour
 
         // 인벤토리에 아이템을 추가합니다.
         inventory.AddItem(itemName);
+    }
+
+    public void 대사_출력(string messageName)
+    {
+        monologue_or_Dialogue.PrintMonologue(messageName);
     }
 }

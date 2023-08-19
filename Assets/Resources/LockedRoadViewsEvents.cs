@@ -4,9 +4,9 @@ using UnityEngine;
 
 public partial class RoadViews : MonoBehaviour
 {
-    public CutScene cutScene;
-    public Print print;
-    public Monologue monologue;
+    public CutScene CutScene;
+    public Print Print;
+    public Monologue Monologue_or_Dialogue;
 
     /// <summary>
     /// <br>잠긴 로드뷰에 접근했을 때의 이벤트 입니다.</br>
@@ -16,11 +16,11 @@ public partial class RoadViews : MonoBehaviour
     {
         switch (roadViewName)
         {
-            //case "map0_튜토리얼>>map0_거실1":
-            //    print.ObjectPrint("TESTOBJECT");
-            //    break;
+            case "map0_N03>>map0_N07":
+                Monologue_or_Dialogue.PrintMonologue("map0_N03_N07_잠김");
+                break;
             default:
-                monologue.PrintMonologue("로드뷰_잠김");
+                Monologue_or_Dialogue.PrintMonologue("로드뷰_잠김");
                 break;
         }
     }

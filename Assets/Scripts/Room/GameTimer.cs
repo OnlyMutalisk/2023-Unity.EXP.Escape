@@ -18,7 +18,8 @@ public class GameTimer : MonoBehaviour
             // 9999는 제한시간 없음을 나타내며, 타이머를 중지합니다.
             if ((int)GameManager.gameTime[GameManager.map] == 9999)
             {
-                GameTimeText.text = "99 : 99";
+                GameTimeText.text = "00 : 00";
+                GameTimeText.color = new Color(0.3568f, 0.3568f, 0.3568f, 1);
                 TimerOff();
                 return;
             }

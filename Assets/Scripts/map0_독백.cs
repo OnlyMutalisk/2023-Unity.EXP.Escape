@@ -36,7 +36,7 @@ public class map0_독백 : MonoBehaviour
         {
             if (panelButton.active == false)
             {
-                SceneManager.LoadScene("map0_튜토리얼");
+                SceneManager.LoadScene("map0_N00");
             }
         }
     }
