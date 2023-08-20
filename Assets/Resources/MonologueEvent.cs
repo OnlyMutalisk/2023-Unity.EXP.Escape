@@ -90,9 +90,158 @@ public class MonologueEvent : MonoBehaviour
             case "map0_C01_컷신3":
                 switch (Monologue.monologueEventFlag)
                 {
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
+                    case 0:
+                        cutScene.PopUpImage(0, 1f);
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "funeral_bell");
+                        audioSource.Play();
+                        break;
+
                     // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
                         monologue.PrintMonologue("map0_C01_컷신4");
+                        break;
+                }
+                break;
+
+            case "map0_C01_컷신4":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [4] 일 때 발생할 이벤트
+                    case 4:
+                        dialogue.PrintMonologue("map0_C01_컷신5");
+                        cutScene.PopUpImage(1, 1f);
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "mom_crying");
+                        audioSource.Play();
+                        break;
+                }
+                break;
+
+            case "map0_C01_컷신5":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        Monologue.monologueEventFlag = 0;
+                        monologue.PrintMonologue("map0_C01_컷신6");
+                        break;
+                }
+                break;
+
+            case "map0_C01_컷신6":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        cutScene.PopUpImage(2, 1f);
+                        break;
+
+                    // 독백 & 대화 텍스트 [6] 일 때 발생할 이벤트
+                    case 6:
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "confused");
+                        audioSource.Play();
+                        break;
+
+                    // 독백 & 대화 텍스트 [8] 일 때 발생할 이벤트
+                    case 8:
+                        cutScene.PopDownImage(0, 1f);
+                        cutScene.PopDownImage(1, 1f);
+                        cutScene.PopDownImage(2, 1f);
+                        break;
+
+                    // 독백 & 대화 텍스트 [9] 일 때 발생할 이벤트
+                    case 9:
+                        SceneManager.LoadScene("map0_C02");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신3":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
+                    case 0:
+                        cutScene.PopUpImage(0, 1f);
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "applaud");
+                        audioSource.Play();
+                        break;
+
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        monologue.PrintMonologue("map0_C02_컷신4");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신4":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [2] 일 때 발생할 이벤트
+                    case 2:
+                        cutScene.PopUpImage(1, 1f);
+                        break;
+
+                    // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
+                    case 3:
+                        dialogue.PrintMonologue("map0_C02_컷신5");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신5":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
+                    case 0:
+                        monologue.PrintMonologue("map0_C02_컷신6");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신6":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        AudioSource audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "camera");
+                        audioSource.Play();
+                        break;
+
+                    // 독백 & 대화 텍스트 [2] 일 때 발생할 이벤트
+                    case 2:
+                        cutScene.PopUpImage(2, 1f);
+                        break;
+
+                    // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
+                    case 3:
+                        dialogue.PrintMonologue("map0_C02_컷신7");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신7":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
+                    case 1:
+                        cutScene.PopDownImage(0, 1f);
+                        cutScene.PopDownImage(1, 1f);
+                        cutScene.PopDownImage(2, 1f);
+                        monologue.PrintMonologue("map0_C02_컷신8");
+                        break;
+                }
+                break;
+
+            case "map0_C02_컷신8":
+                switch (Monologue.monologueEventFlag)
+                {
+                    // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
+                    case 0:
                         break;
                 }
                 break;

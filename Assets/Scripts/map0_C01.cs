@@ -7,7 +7,6 @@ public class map0_C01 : MonoBehaviour
     public Print print;
     public Monologue dialogue;
     public CutScene cutScene;
-    public AudioSource audioSource;
 
     void Start()
     {
@@ -31,8 +30,5 @@ public class map0_C01 : MonoBehaviour
         yield return new WaitForSeconds(4.5f);
 
         dialogue.PrintMonologue("map0_C01_컷신3");
-        cutScene.PopUpImage(0, 1f);
-        audioSource.Play();
-
     }
 }

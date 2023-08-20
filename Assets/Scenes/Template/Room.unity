@@ -401,7 +401,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\uB300\uD654_\uD14C\uC2A4\uD2B8"
+          m_StringArgument: "map0_\uB3C5\uBC31"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &70689900
@@ -1334,7 +1334,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TESTOBJECT
+          m_StringArgument: "map0_N00_\uCE68\uC2E4\uC548\uB0B4\uBB38"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &326941180
@@ -1604,6 +1604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
+  monologue: {fileID: 410914225}
+  dialogue: {fileID: 1224849800}
 --- !u!82 &410914227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2219,7 +2221,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\uB3C5\uBC31_\uD14C\uC2A4\uD2B8"
+          m_StringArgument: "map0_\uB3C5\uBC31"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &579098925
@@ -4674,6 +4676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
+  monologue: {fileID: 410914225}
+  dialogue: {fileID: 1224849800}
 --- !u!82 &1224849802
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5788,7 +5792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f82dfc5fc3c5a8f4080a3550427019c8, type: 3}
+  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
