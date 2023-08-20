@@ -27,9 +27,6 @@ public class Monologue : MonoBehaviour
     // 독백의 이터레이터 입니다.
     public int intCount;
 
-    // 각 글자 시간 간격을 설정 합니다.
-    private float floatTypingSpeed = 0.1f;
-
     // 가장 최근에 출력된 독백 메시지 이름 입니다.
     private static string lastMessageName;
 
@@ -71,7 +68,7 @@ public class Monologue : MonoBehaviour
                     characterIndex++;
 
                     // 글자 간 간격 시간 만큼 대기합니다.
-                    yield return new WaitForSeconds(floatTypingSpeed);
+                    yield return new WaitForSeconds(GameManager.floatTypingSpeed);
                 }
                 // 두번째 터치 시 부터는
                 else if (intSkipFlag >= 2)
@@ -150,7 +147,7 @@ public class Monologue : MonoBehaviour
                     characterIndex++;
 
                     // 글자 간 간격 시간 만큼 대기합니다.
-                    yield return new WaitForSeconds(floatTypingSpeed);
+                    yield return new WaitForSeconds(GameManager.floatTypingSpeed);
                 }
                 // 두번째 터치 시 부터는
                 else if (intSkipFlag >= 2)

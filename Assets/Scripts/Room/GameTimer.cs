@@ -11,10 +11,20 @@ public class GameTimer : MonoBehaviour
     public Text GameTimeText;
     public static bool IsPause;
 
+    // 타이머의 디폴트 상태 입니다.
+    private void Awake()
+    {
+        GameTimeText.color = new Color(0.3568f, 0.3568f, 0.3568f, 1);
+        GameTimeText.text = "00 : 00";
+    }
+
+    // 타이머를 갱신합니다.
     void Update()
     {
         if (!IsPause)
         {
+            GameTimeText.color = new Color(1, 1, 1, 1);
+
             // 9999는 제한시간 없음을 나타내며, 타이머를 중지합니다.
             if ((int)GameManager.gameTime[GameManager.map] == 9999)
             {

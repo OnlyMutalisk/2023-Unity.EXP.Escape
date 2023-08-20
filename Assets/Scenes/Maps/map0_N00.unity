@@ -1172,6 +1172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
+  monologue: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!82 &410914227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3926,6 +3928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
+  monologue: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!82 &1224849802
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4241,6 +4245,7 @@ GameObject:
   - component: {fileID: 1296182215}
   - component: {fileID: 1296182217}
   - component: {fileID: 1296182216}
+  - component: {fileID: 1296182218}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -4287,7 +4292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a8a0cbefdc3c124ea86dbc1d9c2e73c, type: 3}
+  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4305,6 +4310,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296182214}
   m_CullTransparentMesh: 1
+--- !u!95 &1296182218
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296182214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc7a0765074e8c148a49bf00d3030b52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1311094867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +4892,7 @@ GameObject:
   - component: {fileID: 1485801301}
   - component: {fileID: 1485801303}
   - component: {fileID: 1485801302}
+  - component: {fileID: 1485801304}
   m_Layer: 5
   m_Name: Arrow
   m_TagString: Untagged
@@ -4913,7 +4939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a8a0cbefdc3c124ea86dbc1d9c2e73c, type: 3}
+  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4931,6 +4957,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485801300}
   m_CullTransparentMesh: 1
+--- !u!95 &1485801304
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485801300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc7a0765074e8c148a49bf00d3030b52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1552317088
 GameObject:
   m_ObjectHideFlags: 0

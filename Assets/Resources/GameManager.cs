@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     // 각 맵의 제한시간 입니다. 제한시간이 없다면 9999로 설정합니다.
     public static float[] gameTime = {9999, 9999, 1000, 1000};
 
+    // 스크립트 출력 속도를 설정 합니다.
+    public static float floatTypingSpeed = 0.05f;
+
     #region 세이브_데이터
 
     // 침실 안내 메시지가 최초 1회만 출력되게 하기 위한 플래그 입니다.
