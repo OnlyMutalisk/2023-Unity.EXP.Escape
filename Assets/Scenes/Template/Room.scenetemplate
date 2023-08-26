@@ -17,17 +17,32 @@ MonoBehaviour:
   description: 
   preview: {fileID: 0}
   dependencies:
-  - dependency: {fileID: 8300000, guid: 374fd916ceec9b04d8d860726249d2ee, type: 3}
-    instantiationMode: 1
-  - dependency: {fileID: 3128453877622886602, guid: 7597851cea4955c42995a190ecf91a00, type: 3}
+  - dependency: {fileID: 2800000, guid: bf7db836c7430bd449cb2dfb7161f494, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: d7094718bdac022428dd29244922d06b, type: 3}
+  - dependency: {fileID: 2800000, guid: c7e3ea562f440334fb0462f6f174d79d, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 002a995838082ce438e2e6f28dc86044, type: 3}
+  - dependency: {fileID: 9100000, guid: bc7a0765074e8c148a49bf00d3030b52, type: 2}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 762cb5d58257d7d41ab01514b1ed3e3b, type: 3}
+  - dependency: {fileID: 2800000, guid: 17b3eef663735334585f9c9242635eda, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 2b1417b3cd829f448927bfbc53c6b23b, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 95539ddb7e8d87a4ebe58865a8af630b, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 4b52ae342ed57a24ca0933f2adf7d060, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: ec595b261be8f7144844a3318fe79ffe, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: bab5cdab8005a6f40ae810832121a082, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: ab67f7d8e10963741aad9394c9b89554, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 1897dc258c3ad7e4aa8948e2a627746e, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: f9e87656e91aca34fb9671c8c2e81af1, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 0ef7fa60b8de10c4a9fb8e976a5e54bd, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
   addToDefaults: 0

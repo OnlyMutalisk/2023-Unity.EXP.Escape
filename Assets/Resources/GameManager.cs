@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public static int map = 0;
 
     // 각 맵의 제한시간 입니다. 제한시간이 없다면 9999로 설정합니다.
-    public static float[] gameTime = {9999, 9999, 1000, 1000};
+    public static float[] gameTime = {10, 9999, 1000, 1000};
 
     // 스크립트 출력 속도를 설정 합니다.
     public static float floatTypingSpeed = 0.05f;

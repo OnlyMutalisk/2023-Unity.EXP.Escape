@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,7 +36,7 @@ public class GameTimer : MonoBehaviour
             // 타이머가 0에 도달하면 종료 이벤트를 발생시킵니다.
             GameManager.gameTime[GameManager.map] -= Time.deltaTime;
             GameTimeText.text = (int)GameManager.gameTime[GameManager.map] / 60 + " : " + (int)GameManager.gameTime[GameManager.map] % 60;
-            if ((int)GameManager.gameTime[GameManager.map] == 0)
+            if ((int)GameManager.gameTime[GameManager.map] <= 0)
             {
                 TimerEnd();
             }
@@ -58,9 +57,15 @@ public class GameTimer : MonoBehaviour
         IsPause = false;
     }
 
+    public RectTransform stick;
+
     // 타이머 시간 초과 시 동작할 스크립트 작성
     public void TimerEnd()
     {
-        IsPause = true;
+        // stick 이 한바퀴를 완전히 돌았다면, 타이머를 정지합니다.
+        if (stick.rotation.z >= 0)
+        {
+            IsPause = true;
+        }
     }
 }

@@ -8,7 +8,6 @@ public class SoundManager : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public AudioSource bgmSource;
-    public AudioClip[] bgmList;
     public AudioSource sfxSource;
 
 

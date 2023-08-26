@@ -18,26 +18,25 @@ public class Inventory : MonoBehaviour
     private Slot[] slots;
 
     // 슬롯 클릭 이벤트를 위한 객체 입니다.
-    public Image[] imageSlots;
+    public GameObject[] imageSlots;
     public Image[] imageSlotsItems;
 
     // 슬롯 클릭시 이벤트 입니다. 매개변수는 index번째 슬롯을 클릭했음을 의미합니다.
     public void ClickSlot(int index)
     {
-        // 모든 슬롯을 초기 상태 컬러로 설정합니다.
+        // 모든 슬롯 선택 오브젝트를 비활성화 한 후, 현재 슬롯 선택 오브젝트만 활성화 합니다.
         foreach (var imageSlot in imageSlots)
         {
-            imageSlot.color = new Color(255, 255, 255, 0.560784f);
+            imageSlot.SetActive(false);
         }
 
+        imageSlots[index].SetActive(true);
+
         // 현재 슬롯에 아이템이 존재한다면,
-        if(imageSlotsItems[index].sprite != null)
+        if (imageSlotsItems[index].sprite.name != "장비창_0")
         {
             // 현재 슬롯의 아이템을 기록합니다.
             currentSlotItemName = imageSlotsItems[index].sprite.name;
-
-            // 현재 슬롯의 컬러만 빨갛게 칠합니다.
-            imageSlots[index].color = new Color(255, 0, 0, 0.560784f);
         }
         // 현재 슬롯에 아이템이 존재하지 않는다면,
         else

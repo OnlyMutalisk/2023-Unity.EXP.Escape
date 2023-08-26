@@ -38,4 +38,25 @@ public class Begin : MonoBehaviour
     {
         Application.Quit();
     }
+
+    /// <summary>
+    /// <br>메뉴의 On / Off 상태를 변환합니다.</br>
+    /// </summary>
+    public void MenuOnOffControl()
+    {
+        GameObject gameObjectMenu = GameObject.Find("CanvasDontDestroy").transform.GetChild(0).gameObject;
+
+        // 메뉴가 켜져 있다면
+        if (gameObjectMenu.active)
+        {
+            // 메뉴를 끕니다.
+            gameObjectMenu.SetActive(false);
+        }
+        // 메뉴가 꺼져 있다면
+        else
+        {
+            // 메뉴를 켭니다.
+            gameObjectMenu.SetActive(true);
+        }
+    }
 }

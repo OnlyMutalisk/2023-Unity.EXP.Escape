@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour
 {
     [SerializeField] private Image image;
     private Inventory inventory;
+    private Sprite defaultSprite;
     public Item item;
 
     private void Awake()
@@ -20,12 +21,10 @@ public class Slot : MonoBehaviour
         if (item != null)
         {
             image.sprite = item.sprite;
-            image.color = Color.white;
         }
         else
         {
-            image.sprite = null;
-            image.color = Color.clear;
+            image.sprite = Resources.Load<Sprite>("UI/장비창");
         }
     }
 

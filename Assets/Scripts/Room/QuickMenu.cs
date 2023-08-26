@@ -29,12 +29,6 @@ public class QuickMenu : MonoBehaviour
     public GameObject roadViews;
     public GameObject inventory;
 
-    // 인스펙터에서 연결할 효과음 입니다.
-    public AudioSource audioInventoryOpen;
-    public AudioSource audioInventoryClose;
-    public AudioSource audioRoadView;
-    public AudioSource audioMenu;
-
     /// <summary>
     /// <br>로드뷰의 On / Off 상태를 변환합니다.</br>
     /// </summary>
@@ -48,18 +42,12 @@ public class QuickMenu : MonoBehaviour
             {
                 // 로드 뷰를 끕니다.
                 roadView[i].SetActive(false);
-
-                // 로드뷰 효과음을 재생합니다.
-                audioRoadView.Play();
             }
             // 로드뷰가 꺼져 있다면
             else
             {
                 // 로드뷰를 켭니다.
                 roadView[i].SetActive(true);
-
-                // 로드뷰 효과음을 재생합니다.
-                audioRoadView.Play();
             }
         }
 
@@ -77,18 +65,12 @@ public class QuickMenu : MonoBehaviour
         {
             // 인벤토리를 끕니다.
             inventory.SetActive(false);
-
-            // 인벤토리 닫기 효과음을 재생합니다.
-            audioInventoryClose.Play();
         }
         // 인벤토리가 꺼져 있다면
         else
         {
             // 인벤토리를 켭니다.
             inventory.SetActive(true);
-
-            // 인벤토리 열기 효과음을 재생합니다.
-            audioInventoryOpen.Play();
         }
 
         // 모든 로드뷰에 대하여,
@@ -111,18 +93,12 @@ public class QuickMenu : MonoBehaviour
         {
             // 메뉴를 끕니다.
             gameObjectMenu.SetActive(false);
-
-            // 메뉴 효과음을 재생합니다.
-            audioMenu.Play();
         }
         // 메뉴가 꺼져 있다면
         else
         {
             // 메뉴를 켭니다.
             gameObjectMenu.SetActive(true);
-
-            // 메뉴 효과음을 재생합니다.
-            audioMenu.Play();
         }
 
         // 인벤토리를 끕니다.

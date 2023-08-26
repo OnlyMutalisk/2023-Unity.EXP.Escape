@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class map0_C01 : MonoBehaviour
 {
+    // 컷신에서 사용될 오브젝트 입니다.
     public Print print;
     public Monologue dialogue;
     public CutScene cutScene;

@@ -5,8 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using UnityEditor.VersionControl;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -62,10 +60,8 @@ public class MonologueEvent : MonoBehaviour
                 {
                     // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/Object/" + "locked_door");
+                        Room.SFX_재생("locked_door");
                         GameManager.boolMap0_N04_Flag = false;
-                        audioSource.Play();
                         break;
 
                     // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
@@ -93,9 +89,7 @@ public class MonologueEvent : MonoBehaviour
                     // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.PopUpImage(0, 1f);
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "funeral_bell");
-                        audioSource.Play();
+                        Room.SFX_재생("funeral_bell");
                         break;
 
                     // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
@@ -112,9 +106,7 @@ public class MonologueEvent : MonoBehaviour
                     case 4:
                         dialogue.PrintMonologue("map0_C01_컷신5");
                         cutScene.PopUpImage(1, 1f);
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "mom_crying");
-                        audioSource.Play();
+                        Room.SFX_재생("mom_crying");
                         break;
                 }
                 break;
@@ -140,9 +132,7 @@ public class MonologueEvent : MonoBehaviour
 
                     // 독백 & 대화 텍스트 [6] 일 때 발생할 이벤트
                     case 6:
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "confused");
-                        audioSource.Play();
+                        Room.SFX_재생("confused");
                         break;
 
                     // 독백 & 대화 텍스트 [8] 일 때 발생할 이벤트
@@ -165,9 +155,7 @@ public class MonologueEvent : MonoBehaviour
                     // 독백 & 대화 텍스트 [0] 일 때 발생할 이벤트
                     case 0:
                         cutScene.PopUpImage(0, 1f);
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "applaud");
-                        audioSource.Play();
+                        Room.SFX_재생("applaud");
                         break;
 
                     // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
@@ -207,9 +195,7 @@ public class MonologueEvent : MonoBehaviour
                 {
                     // 독백 & 대화 텍스트 [1] 일 때 발생할 이벤트
                     case 1:
-                        AudioSource audioSource = GetComponent<AudioSource>();
-                        audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + "camera");
-                        audioSource.Play();
+                        Room.SFX_재생("camera");
                         break;
 
                     // 독백 & 대화 텍스트 [2] 일 때 발생할 이벤트
