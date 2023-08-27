@@ -400,8 +400,10 @@ MonoBehaviour:
   cutScene: {fileID: 1574610434}
   print: {fileID: 476533769}
   monologue_or_Dialogue: {fileID: 410914225}
-  inventory: {fileID: 0}
+  inventory: {fileID: 1214999676}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!114 &116801115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,9 +1291,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
   print: {fileID: 476533769}
-  monologue_or_Dialogue: {fileID: 1224849800}
-  inventory: {fileID: 0}
+  monologue_or_Dialogue: {fileID: 410914225}
+  inventory: {fileID: 1214999676}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!114 &454158335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,8 +1496,10 @@ MonoBehaviour:
   cutScene: {fileID: 1574610434}
   print: {fileID: 476533769}
   monologue_or_Dialogue: {fileID: 410914225}
-  inventory: {fileID: 0}
+  inventory: {fileID: 1214999676}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!114 &530667682
 MonoBehaviour:
   m_ObjectHideFlags: 0

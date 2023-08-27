@@ -1953,9 +1953,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutScene: {fileID: 1574610434}
   print: {fileID: 476533769}
-  monologue_or_Dialogue: {fileID: 1224849800}
+  monologue_or_Dialogue: {fileID: 410914225}
   inventory: {fileID: 0}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!1 &710326036
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class map0_C02 : MonoBehaviour
 {
     public Print print;
-    public Monologue dialogue;
+    public Monologue monologue;
     public CutScene cutScene;
 
     void Start()
@@ -25,6 +25,6 @@ public class map0_C02 : MonoBehaviour
 
         yield return new WaitForSeconds(4.5f);
 
-        dialogue.PrintMonologue("map0_C02_컷신3");
+        monologue.PrintMonologue("map0_C02_컷신3");
     }
 }

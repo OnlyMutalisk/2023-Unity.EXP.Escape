@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameTimeText: {fileID: 1209902351}
-  stick: {fileID: 0}
+  stick: {fileID: 1163452997}
 --- !u!114 &18578279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   print: {fileID: 476533769}
-  dialogue: {fileID: 1224849800}
+  monologue: {fileID: 410914225}
   cutScene: {fileID: 1574610434}
 --- !u!1 &673541791
 GameObject:

@@ -179,6 +179,8 @@ MonoBehaviour:
   monologue_or_Dialogue: {fileID: 410914225}
   inventory: {fileID: 0}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!114 &56752521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3013,7 +3015,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: map0_N08
+          m_StringArgument: map0_N02
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1102611933
@@ -3368,7 +3370,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: map0_N02
+          m_StringArgument: map0_N08
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1218971705
@@ -5629,6 +5631,8 @@ MonoBehaviour:
   monologue_or_Dialogue: {fileID: 410914225}
   inventory: {fileID: 0}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!114 &1866301265
 MonoBehaviour:
   m_ObjectHideFlags: 0

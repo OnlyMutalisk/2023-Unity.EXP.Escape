@@ -1225,6 +1225,8 @@ MonoBehaviour:
   monologue_or_Dialogue: {fileID: 0}
   inventory: {fileID: 682240078}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 0}
+  dialoguePanel: {fileID: 0}
 --- !u!114 &326941179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2887,6 +2889,8 @@ MonoBehaviour:
   monologue_or_Dialogue: {fileID: 0}
   inventory: {fileID: 682240078}
   itemImage: {fileID: 176672605}
+  monologuePanel: {fileID: 1733550726}
+  dialoguePanel: {fileID: 903652954}
 --- !u!1 &682240076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,7 +4175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1224849799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6588,7 +6592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameTimeText: {fileID: 107290048}
-  stick: {fileID: 0}
+  stick: {fileID: 980971746}
 --- !u!224 &2452365240082092778
 RectTransform:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class map0_C01 : MonoBehaviour
 {
     // 컷신에서 사용될 오브젝트 입니다.
     public Print print;
-    public Monologue dialogue;
+    public Monologue monologue;
     public CutScene cutScene;
 
     void Start()
@@ -31,6 +31,6 @@ public class map0_C01 : MonoBehaviour
 
         yield return new WaitForSeconds(4.5f);
 
-        dialogue.PrintMonologue("map0_C01_컷신3");
+        monologue.PrintMonologue("map0_C01_컷신3");
     }
 }

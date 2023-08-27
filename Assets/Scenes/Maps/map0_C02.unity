@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   print: {fileID: 476533769}
-  dialogue: {fileID: 1224849800}
+  monologue: {fileID: 410914225}
   cutScene: {fileID: 1574610434}
 --- !u!114 &632479732
 MonoBehaviour:

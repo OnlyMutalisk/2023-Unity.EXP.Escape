@@ -690,8 +690,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df1e32595127a849b2e88ff7992e414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monologue: {fileID: 2060783113}
-  panelButton: {fileID: 148847857}
+  monologue: {fileID: 1338772125}
+  panelButton: {fileID: 1048940809}
 --- !u!222 &632479733
 CanvasRenderer:
   m_ObjectHideFlags: 0

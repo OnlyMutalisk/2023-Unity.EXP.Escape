@@ -53,7 +53,6 @@ public class MonologueEvent : MonoBehaviour
                         break;
                 }
                 break;
-                break;
 
             case "map0_N04_침실창문":
                 switch (Monologue.monologueEventFlag)
@@ -104,7 +103,7 @@ public class MonologueEvent : MonoBehaviour
                 {
                     // 독백 & 대화 텍스트 [4] 일 때 발생할 이벤트
                     case 4:
-                        dialogue.PrintMonologue("map0_C01_컷신5");
+                        monologue.PrintMonologue("map0_C01_컷신5");
                         cutScene.PopUpImage(1, 1f);
                         Room.SFX_재생("mom_crying");
                         break;
@@ -175,7 +174,7 @@ public class MonologueEvent : MonoBehaviour
 
                     // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        dialogue.PrintMonologue("map0_C02_컷신5");
+                        monologue.PrintMonologue("map0_C02_컷신5");
                         break;
                 }
                 break;
@@ -205,7 +204,7 @@ public class MonologueEvent : MonoBehaviour
 
                     // 독백 & 대화 텍스트 [3] 일 때 발생할 이벤트
                     case 3:
-                        dialogue.PrintMonologue("map0_C02_컷신7");
+                        monologue.PrintMonologue("map0_C02_컷신7");
                         break;
                 }
                 break;
