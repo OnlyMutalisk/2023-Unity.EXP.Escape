@@ -44,17 +44,9 @@ public class Messages
 
     // map0_C01
     public static LinkedList<string> map0_C01_컷신3 = new LinkedList<string>();
-    public static LinkedList<string> map0_C01_컷신4 = new LinkedList<string>();
-    public static LinkedList<string> map0_C01_컷신5 = new LinkedList<string>();
-    public static LinkedList<string> map0_C01_컷신6 = new LinkedList<string>();
 
     // map0_C02
     public static LinkedList<string> map0_C02_컷신3 = new LinkedList<string>();
-    public static LinkedList<string> map0_C02_컷신4 = new LinkedList<string>();
-    public static LinkedList<string> map0_C02_컷신5 = new LinkedList<string>();
-    public static LinkedList<string> map0_C02_컷신6 = new LinkedList<string>();
-    public static LinkedList<string> map0_C02_컷신7 = new LinkedList<string>();
-    public static LinkedList<string> map0_C02_컷신8 = new LinkedList<string>();
 
     static Messages()
     {
@@ -150,39 +142,39 @@ public class Messages
 
         // "map0_C01" 의 컷신 대사 입니다.
         map0_C01_컷신3.AddLast("고인을 위해 기도하는 시간을 갖겠습니다. 성부와 성자와 성령의 이름으로...");
-        map0_C01_컷신4.AddLast("이렇게 갑작스럽게 아버지가 돌아가실 줄은 몰랐다.");
-        map0_C01_컷신4.AddLast("늘 일 때문에 바빠 함께하는 시간은 적었지만 아버지는 좋은 사람이었다.");
-        map0_C01_컷신4.AddLast("슬픔 공허함? 아니 그냥 아무것도 느껴지지가 않는다.");
-        map0_C01_컷신4.AddLast("이 모든 상황이 낯설고 어색하기만하다.");
-        map0_C01_컷신4.AddLast("내일이면 아무 일 없다는 듯 집에 오실 것만 같았다.");
-        map0_C01_컷신5.AddLast("우윽...읏......흑......흐으으으.......");
-        map0_C01_컷신5.AddLast("저 어린 것을 두고......어째서 당신이......");
-        map0_C01_컷신6.AddLast("늘 강인하기만 했던 엄마의 뒷 모습은 오늘따라 다른 사람 같았다......");
-        map0_C01_컷신6.AddLast("엄마도 저렇게 울 수 있었구나....");
-        map0_C01_컷신6.AddLast("참담하다. 아버지도 안 계시는데 나는 이제 어떡하지?");
-        map0_C01_컷신6.AddLast("............");
-        map0_C01_컷신6.AddLast("이제 엄마에게는 진짜 나밖에 없다.");
-        map0_C01_컷신6.AddLast("내가 아니면 아무도 엄마를 챙겨줄 사람이 없다.");
-        map0_C01_컷신6.AddLast("후...정신차리자");
-        map0_C01_컷신6.AddLast("내가 아무것도 할 수 없다는 것에 대한 비참함");
-        map0_C01_컷신6.AddLast("이제부터는 내가 엄마를 책임져야 한다는 부담감");
-        map0_C01_컷신6.AddLast("그 모든 것들이 몇 년이 지난 지금도 가끔씩 생생하게 느껴진다.");
+        map0_C01_컷신3.AddLast("이렇게 갑작스럽게 아버지가 돌아가실 줄은 몰랐다.");
+        map0_C01_컷신3.AddLast("늘 일 때문에 바빠 함께하는 시간은 적었지만 아버지는 좋은 사람이었다.");
+        map0_C01_컷신3.AddLast("슬픔 공허함? 아니 그냥 아무것도 느껴지지가 않는다.");
+        map0_C01_컷신3.AddLast("이 모든 상황이 낯설고 어색하기만하다.");
+        map0_C01_컷신3.AddLast("내일이면 아무 일 없다는 듯 집에 오실 것만 같았다.");
+        map0_C01_컷신3.AddLast("우윽...읏......흑......흐으으으.......");
+        map0_C01_컷신3.AddLast("저 어린 것을 두고......어째서 당신이......");
+        map0_C01_컷신3.AddLast("늘 강인하기만 했던 엄마의 뒷 모습은 오늘따라 다른 사람 같았다......");
+        map0_C01_컷신3.AddLast("엄마도 저렇게 울 수 있었구나....");
+        map0_C01_컷신3.AddLast("참담하다. 아버지도 안 계시는데 나는 이제 어떡하지?");
+        map0_C01_컷신3.AddLast("............");
+        map0_C01_컷신3.AddLast("이제 엄마에게는 진짜 나밖에 없다.");
+        map0_C01_컷신3.AddLast("내가 아니면 아무도 엄마를 챙겨줄 사람이 없다.");
+        map0_C01_컷신3.AddLast("후...정신차리자");
+        map0_C01_컷신3.AddLast("내가 아무것도 할 수 없다는 것에 대한 비참함");
+        map0_C01_컷신3.AddLast("이제부터는 내가 엄마를 책임져야 한다는 부담감");
+        map0_C01_컷신3.AddLast("그 모든 것들이 몇 년이 지난 지금도 가끔씩 생생하게 느껴진다.");
 
         // "map0_C02" 의 컷신 대사 입니다.
         map0_C02_컷신3.AddLast("감사합니다. 저는 이 모든 영광을 고생하신 저희 어머니께 바치겠습니다.");
-        map0_C02_컷신4.AddLast("장례식 이후 나는 악착같이 노력했다.");
-        map0_C02_컷신4.AddLast("홀로 남겨진 엄마를 위해서라도 나는 그럴 수 밖에 없었다.");
-        map0_C02_컷신4.AddLast("정말 다시는 돌아가고 싶지 않을 정도로 노력하고 또 노력했다.");
-        map0_C02_컷신4.AddLast("좋은 사람을 만나는 복, 노력이 인정받는 복");
-        map0_C02_컷신5.AddLast("한 번 글을 써보는 건 어떠니?");
-        map0_C02_컷신6.AddLast("나는 좋은 은사님을 만나 내 재능을 일찍 찾을 수 있었다.");
-        map0_C02_컷신6.AddLast("물론 처음에는 글 쓰는 일이 쉽지 않았다.");
-        map0_C02_컷신6.AddLast("그래도 차츰 내 글로 한 개 두 개 상을 받기 시작했고");
-        map0_C02_컷신6.AddLast("이른 나이에 사람들이 알아주는 베스트 셀러 작가가 될 수 있었다.");
-        map0_C02_컷신7.AddLast("엄마 이것 봐 나 이렇게 대단한 사람이야");
-        map0_C02_컷신7.AddLast("이번에 돈 많이 벌었어. 엄마 이젠 내가 호강시켜줄게");
-        map0_C02_컷신8.AddLast("젊은 나이의 성공. 앞으로는 쭉 행복할 것만 같았다.");
-        map0_C02_컷신8.AddLast("되려 내 성공이 내 발목을 붙잡을 줄은 이 때는 잘 몰랐다.");
+        map0_C02_컷신3.AddLast("장례식 이후 나는 악착같이 노력했다.");
+        map0_C02_컷신3.AddLast("홀로 남겨진 엄마를 위해서라도 나는 그럴 수 밖에 없었다.");
+        map0_C02_컷신3.AddLast("정말 다시는 돌아가고 싶지 않을 정도로 노력하고 또 노력했다.");
+        map0_C02_컷신3.AddLast("좋은 사람을 만나는 복, 노력이 인정받는 복");
+        map0_C02_컷신3.AddLast("한 번 글을 써보는 건 어떠니?");
+        map0_C02_컷신3.AddLast("나는 좋은 은사님을 만나 내 재능을 일찍 찾을 수 있었다.");
+        map0_C02_컷신3.AddLast("물론 처음에는 글 쓰는 일이 쉽지 않았다.");
+        map0_C02_컷신3.AddLast("그래도 차츰 내 글로 한 개 두 개 상을 받기 시작했고");
+        map0_C02_컷신3.AddLast("이른 나이에 사람들이 알아주는 베스트 셀러 작가가 될 수 있었다.");
+        map0_C02_컷신3.AddLast("엄마 이것 봐 나 이렇게 대단한 사람이야");
+        map0_C02_컷신3.AddLast("이번에 돈 많이 벌었어. 엄마 이젠 내가 호강시켜줄게");
+        map0_C02_컷신3.AddLast("젊은 나이의 성공. 앞으로는 쭉 행복할 것만 같았다.");
+        map0_C02_컷신3.AddLast("되려 내 성공이 내 발목을 붙잡을 줄은 이 때는 잘 몰랐다.");
 
         #endregion
     }

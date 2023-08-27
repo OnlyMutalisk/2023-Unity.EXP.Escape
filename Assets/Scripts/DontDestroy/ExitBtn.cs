@@ -17,8 +17,10 @@ public class ExitBtn : MonoBehaviour
         }
         else
         {
-            menu.SetActive(false);
             SceneManager.LoadScene("Begin");
+            menu.SetActive(false);
+            Room.BGM_재생("lobby");
+            GameManager.SAVE();
         }
     }
 }

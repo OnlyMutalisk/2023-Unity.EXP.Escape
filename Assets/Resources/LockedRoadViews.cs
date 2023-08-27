@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class LockedRoadViews : MonoBehaviour
 {
-    public static List<string> lockedRoadViews = new List<string>();
-    public static List<string> lockedRoadViewsRESET = new List<string>();
+
 
     /// <summary>
     /// <br>잠긴 로드뷰를 초기 상태로 복귀시킵니다.</br>
@@ -13,20 +12,20 @@ public class LockedRoadViews : MonoBehaviour
     /// </summary>
     public void ResetLockedRoadViews()
     {
-        lockedRoadViews.Clear();
-        lockedRoadViews.AddRange(lockedRoadViewsRESET);
+        GameManager.lockedRoadViews.Clear();
+        GameManager.lockedRoadViews.AddRange(GameManager.lockedRoadViewsRESET);
     }
 
     // 잠글 로드뷰를 여기에 추가합니다.
     public void Start()
     {
-        lockedRoadViews.Add("map0_튜토리얼>>map0_거실1");
+        GameManager.lockedRoadViews.Add("map0_튜토리얼>>map0_거실1");
 
         #region 내부 구현
 
         // 리셋용 리스트에 저장합니다.
-        lockedRoadViewsRESET.Clear();
-        lockedRoadViewsRESET.AddRange(lockedRoadViews);
+        GameManager.lockedRoadViewsRESET.Clear();
+        GameManager.lockedRoadViewsRESET.AddRange(GameManager.lockedRoadViews);
 
         #endregion
     }

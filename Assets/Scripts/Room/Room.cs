@@ -32,42 +32,7 @@ public class Room : MonoBehaviour
         // time 초 동안 대기 후, FadeInOut 오브젝트를 비활성화 시켜 다른 오브젝트를 가리지 않게 함.
         yield return new WaitForSeconds(GameManager.floatSceneFadeInOutTime * (float)1.5);
         gameObject.SetActive(false);
-    }
-
-    /// <summary>
-    /// <br>맵을 변경합니다. 로비의 맵 번호는 99 입니다.</br>
-    /// </summary>
-    public static void ChangeMap(int 맵_번호)
-    {
-        // 인벤토리를 초기화 합니다.
-        Inventory.inventory.Clear();
-
-        // 현재 맵 번호를 갱신 합니다.
-        GameManager.map = 맵_번호;
-
-        // 맵 번호에 맞는 BGM 경로를 지정합니다.
-        string path;
-
-        if (맵_번호 == 99)
-        {
-            path = "lobby";
-        }
-        else
-        {
-            path = 맵_번호.ToString();
-        }
-
-        // 지정한 경로의 BGM 을 가져옵니다
-        AudioClip newAudioClip = Resources.Load<AudioClip>("Sounds/BGM/map" + path);
-
-        // AudioClip 을 새 BGM 으로 변경합니다.
-        GameObject gameObject = GameObject.Find("BGM Player");
-        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
-        audioSource.clip = newAudioClip;
-
-        // 변경한 BGM 을 재생합니다.
-        audioSource.Play();
-    }
+    }  
 
     /// <summary>
     /// <br>SFX 를 재생합니다. 확장자명을 제외한 파일의 이름을 변수로 사용합니다.</br>
@@ -77,6 +42,17 @@ public class Room : MonoBehaviour
     {
         AudioSource audioSource = GameObject.Find("SFX Player").GetComponent<AudioSource>();
         audioSource.clip = Resources.Load<AudioClip>("Sounds/SFX/" + soundName);
+        audioSource.Play();
+    }
+
+    /// <summary>
+    /// <br>BGM 을 재생합니다. 확장자명을 제외한 파일의 이름을 변수로 사용합니다.</br>
+    /// <br>사운드 파일은 반드시 Assets/Resources/Sounds/SFX 경로에 존재해야 합니다.</br>
+    /// </summary>
+    public static void BGM_재생(string soundName)
+    {
+        AudioSource audioSource = GameObject.Find("BGM Player").GetComponent<AudioSource>();
+        audioSource.clip = Resources.Load<AudioClip>("Sounds/BGM/" + soundName);
         audioSource.Play();
     }
 

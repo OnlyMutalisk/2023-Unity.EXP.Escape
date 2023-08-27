@@ -6,9 +6,6 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    // 인벤토리에 저장되어있는 아이템 리스트 입니다.
-    public static List<Item> inventory = new List<Item>();
-
     // 현재 선택된 아이템 입니다.
     public string currentSlotItemName;
 
@@ -63,8 +60,8 @@ public class Inventory : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i < inventory.Count)
-                slots[i].UpdateSlot(inventory[i]);
+            if (i < GameManager.inventory.Count)
+                slots[i].UpdateSlot(GameManager.inventory[i]);
             else
                 slots[i].UpdateSlot(null);
         }
@@ -73,12 +70,12 @@ public class Inventory : MonoBehaviour
     // 인벤토리에 아이템을 추가합니다.
     public void AddItem(string itemName)
     {
-        if (inventory.Count < slots.Length)
+        if (GameManager.inventory.Count < slots.Length)
         {
             // 정적 아이템 목록 Items 에서 name 속성이 매개변수와 동일한 아이템 객체 찾기
             Item item = Item.items.FirstOrDefault(item => item.name == itemName);
 
-            inventory.Add(item);
+            GameManager.inventory.Add(item);
             FreshSlot();
         }
     }
@@ -89,7 +86,7 @@ public class Inventory : MonoBehaviour
         // 정적 아이템 목록 Items 에서 name 속성이 매개변수와 동일한 아이템 객체 찾기
         Item item = Item.items.FirstOrDefault(item => item.name == itemName);
 
-        inventory.Remove(item);
+        GameManager.inventory.Remove(item);
         FreshSlot();
     }
 }

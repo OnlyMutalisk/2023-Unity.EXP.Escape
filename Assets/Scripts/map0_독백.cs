@@ -36,6 +36,8 @@ public class map0_독백 : MonoBehaviour
             if (panelButton.active == false)
             {
                 SceneManager.LoadScene("map0_N00");
+                GameManager.sceneName = "map0_N00";
+                GameTimer.TimerOn();
             }
         }
     }

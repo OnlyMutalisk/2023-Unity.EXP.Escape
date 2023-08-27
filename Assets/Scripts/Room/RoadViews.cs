@@ -13,7 +13,7 @@ public partial class RoadViews : MonoBehaviour
         bool isLock = false;
 
         // 현재 로드뷰가 잠긴 로드뷰인지 체크합니다.
-        foreach (string lockedRoadView in LockedRoadViews.lockedRoadViews)
+        foreach (string lockedRoadView in GameManager.lockedRoadViews)
         {
             // 만약 잠긴 로드뷰라면 플래그를 true로 바꿉니다.
             if (roadViewName == lockedRoadView)
@@ -32,6 +32,7 @@ public partial class RoadViews : MonoBehaviour
         else
         {
             SceneManager.LoadScene(nextSceneName);
+            GameManager.sceneName = nextSceneName;
         }
     }
 }

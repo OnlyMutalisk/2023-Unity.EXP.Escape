@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class map0_시작 : MonoBehaviour
 {
@@ -23,14 +24,16 @@ public class map0_시작 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
 
         SceneManager.LoadScene("map0_독백");
+        GameManager.sceneName = "map0_독백";
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(FadeInOutNextScene());
 
-        // 맵을 0 으로 변경합니다.
-        Room.ChangeMap(0);
+        // 현재 맵 번호를 갱신 합니다.
+        GameManager.map = 0;
+
+        Room.BGM_재생("map0");
     }
 }
