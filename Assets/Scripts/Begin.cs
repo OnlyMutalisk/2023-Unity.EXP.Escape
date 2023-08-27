@@ -30,9 +30,9 @@ public class Begin : MonoBehaviour
     /// </summary>
     public void YesButton()
     {
-        SceneManager.LoadScene("map0_시작");
         GameManager.RESET();
         GameManager.SAVE();
+        SceneManager.LoadScene("map0_시작");
     }
 
     /// <summary>
@@ -64,7 +64,6 @@ public class Begin : MonoBehaviour
         // 이전에 저장한 데이터가 있다면 이어서 하기
         if (GameManager.sceneName != null)
         {
-            GameManager.LOAD();
             SceneManager.LoadScene(GameManager.sceneName);
             Room.BGM_재생("map" + GameManager.map.ToString());
 

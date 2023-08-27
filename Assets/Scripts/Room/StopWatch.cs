@@ -9,7 +9,7 @@ public class StopWatch : MonoBehaviour
     public RectTransform stick;
 
     // 처음에 주어진 시간을 저장합니다.
-    public static float[] gameTime = new float[GameManager.gameTime.Length];
+    public static float[] gameTime = new float[] { 30, 9999, 1000, 1000 };
 
     private void Start()
     {
