@@ -42,10 +42,6 @@ public class MonologueEvent : MonoBehaviour
             case "map0_N08_침실문":
                 switch (Monologue.monologueEventFlag)
                 {
-                    case 0:
-                        Room.SFX_재생("locked_door");
-                        break;
-
                     case 2:
                         SceneManager.LoadScene("map0_N07");
                         GameManager.sceneName = "map0_N07";

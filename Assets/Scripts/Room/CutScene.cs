@@ -17,9 +17,6 @@ public class CutScene : MonoBehaviour
 
     public void Start()
     {
-        // 컷신의 크기를 캔버스에 맞게 규정합니다.
-        SizeControl();
-
         // CutScene 오브젝트 하위의 모든 이미지를 가져옵니다.
         int length = gameObject.transform.childCount;
 
@@ -152,19 +149,5 @@ public class CutScene : MonoBehaviour
         fadeInOutPanel.GetComponent<Image>().color = new Color(0, 0, 0, 0.8f);
 
         StartCoroutine(imageEffect.페이드_인(fadeInOutPanel.name, 1, 60));
-    }
-
-    /// <summary>
-    /// <br>컷신의 사이즈를 캔버스에 맞게 조절합니다.</br>
-    /// </summary>
-    public void SizeControl()
-    {
-        float canvasWidth = canvas.sizeDelta.x;
-
-        // 모든 컷신의 너비를 캔버스의 폭을 균등하게 분할한 값으로 매깁니다.
-        foreach (RectTransform image in cutScenes)
-        {
-            image.sizeDelta = new Vector2(canvasWidth / cutScenes.Length, image.sizeDelta.y);
-        }
     }
 }

@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 632479727}
   - component: {fileID: 632479733}
   - component: {fileID: 632479731}
+  - component: {fileID: 632479734}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -373,7 +374,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 100
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -447,6 +448,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632479726}
   m_CullTransparentMesh: 1
+--- !u!114 &632479734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632479726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4275af663a9370f43a900bcf86a14574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311094867
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,8 +682,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 029ab6b94fcd71f40bc4ae8800ee6cce, type: 3}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: e015df78645df724aa14cb27022b87b2, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -681,8 +694,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "\uADF8 \uB54C \uADF8 \uC21C\uAC04\uB9CC \uACE0\uCE60 \uC218 \uC788\uB2E4\uBA74\n\uC9C0\uAE08\uC758
-    \uB098\uB294 \uB354 \uB098\uC558\uC744\uAE4C ?"
+  m_Text: "\uADF8 \uB54C \uADF8 \uC21C\uAC04\uB9CC \uACE0\uCE60 \uC218 \uC788\uB2E4\uBA74
+    \uC9C0\uAE08\uC758 \uB098\uB294 \uB354 \uB098\uC558\uC744\uAE4C ?"
 --- !u!222 &1929424411
 CanvasRenderer:
   m_ObjectHideFlags: 0

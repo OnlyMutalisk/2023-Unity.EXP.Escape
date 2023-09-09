@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 635558641}
   - component: {fileID: 635558640}
   - component: {fileID: 635558645}
+  - component: {fileID: 635558646}
   m_Layer: 5
   m_Name: CanvasDontDestroy
   m_TagString: Untagged
@@ -831,7 +832,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -892,6 +893,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf7457170c573d4a9798636247e3769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &635558646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635558639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4275af663a9370f43a900bcf86a14574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &875332932

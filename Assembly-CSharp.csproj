@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\map0_독백.cs" />
     <Compile Include="Assets\Scripts\Room\Module\이미지_이펙트.cs" />
     <Compile Include="Assets\Scripts\Room\Monologue.cs" />
+    <Compile Include="Assets\Scripts\Room\Canvas.cs" />
     <Compile Include="Assets\Scripts\DontDestroy\DontDestroy.cs" />
     <Compile Include="Assets\Resources\Items.cs" />
   </ItemGroup>

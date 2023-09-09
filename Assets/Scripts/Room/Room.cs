@@ -59,7 +59,7 @@ public class Room : MonoBehaviour
     /// <summary>
     /// <br>오브젝트의 위치를 보정하기 위해 캔버스 스케일러의 Match 값을 자동으로 조절합니다.</br>
     /// </summary>
-    void MatchObjectSize()
+    public void MatchObjectSize()
     {
         // Default 해상도 비율
         float fixedAspectRatio = 16f / 9f;
