@@ -79,7 +79,7 @@ public class Begin : MonoBehaviour
         else
         {
             // 안내문구 팝업
-            alert.SetActive(true);
+            // alert.SetActive(true);
         }
     }
 
