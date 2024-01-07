@@ -65,13 +65,16 @@
     <Compile Include="Assets\Scripts\Room\Slot.cs" />
     <Compile Include="Assets\Scripts\map0_N05.cs" />
     <Compile Include="Assets\Scripts\Room\Module\텍스트_이펙트.cs" />
+    <Compile Include="Assets\Scripts\map1_독백.cs" />
     <Compile Include="Assets\Scripts\Room\StopWatch.cs" />
     <Compile Include="Assets\Scripts\Room\CutScene.cs" />
     <Compile Include="Assets\Scripts\Room\RoadViews.cs" />
     <Compile Include="Assets\Scripts\Room\Inventory.cs" />
     <Compile Include="Assets\Scripts\map0_C01.cs" />
     <Compile Include="Assets\Resources\GameManager.cs" />
+    <Compile Include="Assets\Scripts\map1_시작.cs" />
     <Compile Include="Assets\Scripts\map0_C02.cs" />
+    <Compile Include="Assets\Scripts\map1_N09.cs" />
     <Compile Include="Assets\Scripts\map0_튜토리얼.cs" />
     <Compile Include="Assets\Scripts\Room\GameTimer.cs" />
     <Compile Include="Assets\Resources\LockedRoadViews.cs" />

@@ -135,6 +135,24 @@ public class MonologueEvent : MonoBehaviour
                         cutScene.PopDownImage(1, 1f);
                         cutScene.PopDownImage(2, 1f);
                         break;
+
+                    case 14:
+                        SceneManager.LoadScene("map1_시작");
+                        GameManager.sceneName = "map1_시작";
+                        break;
+                }
+                break;
+
+            case "map1_N09_현관문":
+                switch (Monologue.monologueEventFlag)
+                {
+                    case 0:
+                        cutScene.PopUpImage(0, 0f);
+                        break;
+
+                    case 2:
+                        cutScene.PopDownImage(0, 0f);
+                        break;
                 }
                 break;
         }

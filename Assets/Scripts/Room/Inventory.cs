@@ -87,6 +87,7 @@ public class Inventory : MonoBehaviour
         Item item = Item.items.FirstOrDefault(item => item.name == itemName);
 
         GameManager.inventory.Remove(item);
+        currentSlotItemName = "";
         FreshSlot();
     }
 }

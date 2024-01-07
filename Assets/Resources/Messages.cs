@@ -41,6 +41,8 @@ public class Messages
     public static LinkedList<string> map0_N03_N07_잠김 = new LinkedList<string>();
     public static LinkedList<string> map0_N02_화분들 = new LinkedList<string>();
     public static LinkedList<string> map0_N05_세탁기 = new LinkedList<string>();
+    public static LinkedList<string> map1_독백 = new LinkedList<string>();
+    public static LinkedList<string> map1_N09_현관문 = new LinkedList<string>();
 
     // map0_C01
     public static LinkedList<string> map0_C01_컷신3 = new LinkedList<string>();
@@ -87,7 +89,6 @@ public class Messages
         map0_C02_컷신1.time = 2;
         map0_C02_컷신2.message = "그 뒤로는 일이 잘 풀렸다.";
         map0_C02_컷신2.time = 2;
-
 
         #endregion
 
@@ -175,6 +176,15 @@ public class Messages
         map0_C02_컷신3.AddLast("이번에 돈 많이 벌었어. 엄마 이젠 내가 호강시켜줄게");
         map0_C02_컷신3.AddLast("젊은 나이의 성공. 앞으로는 쭉 행복할 것만 같았다.");
         map0_C02_컷신3.AddLast("되려 내 성공이 내 발목을 붙잡을 줄은 이 때는 잘 몰랐다.");
+
+        // "map1_독백" 의 대사 입니다.
+        map1_독백.AddLast("예전 기억이 차츰 떠오른다.");
+        map1_독백.AddLast("바람 쐴 겸, 담배 한 대 피우고 싶어졌다.");
+        map1_독백.AddLast("현관으로 나가자.");
+
+        // "map1_N09_현관문" 의 최초 상호작용 대사 입니다.
+        map1_N09_현관문.AddLast("도어락 건전지가 없다.");
+        map1_N09_현관문.AddLast("건전지가 있을만한 곳을 찾아보자.");
 
         #endregion
     }
