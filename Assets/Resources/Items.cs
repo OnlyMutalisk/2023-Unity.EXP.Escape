@@ -31,6 +31,10 @@ public class Items : MonoBehaviour
 {
     // 이 곳에 아이템을 추가 합니다.
     public static Item 열쇠 = new Item("열쇠");
+    public static Item 건전지 = new Item("건전지");
+    public static Item 헤어핀 = new Item("헤어핀");
+    public static Item 드릴 = new Item("드릴");
+    public static Item 망치 = new Item("망치");
 
     #region 내부 구현
 

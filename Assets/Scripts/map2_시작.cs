@@ -5,7 +5,7 @@ using System.Threading;
 using UnityEngine.SceneManagement;
 using System.IO;
 
-public class map1_시작 : MonoBehaviour
+public class map2_시작 : MonoBehaviour
 {
     /// <summary>
     /// <br>페이드 인 아웃 후 씬을 넘깁니다..</br>
@@ -23,8 +23,8 @@ public class map1_시작 : MonoBehaviour
         StartCoroutine(textEffect.페이드_아웃("FadeInOutText", 1, 60));
         yield return new WaitForSeconds(1.5f);
 
-        SceneManager.LoadScene("map1_독백");
-        GameManager.sceneName = "map1_독백";
+        SceneManager.LoadScene("map2_독백");
+        GameManager.sceneName = "map2_독백";
     }
 
     void Start()
@@ -32,8 +32,8 @@ public class map1_시작 : MonoBehaviour
         StartCoroutine(FadeInOutNextScene());
 
         // 현재 맵 번호를 갱신 합니다.
-        GameManager.map = 1;
+        GameManager.map = 2;
 
-        Room.BGM_재생("map1");
+        Room.BGM_재생("map2");
     }
 }

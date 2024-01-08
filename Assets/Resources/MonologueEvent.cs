@@ -155,6 +155,37 @@ public class MonologueEvent : MonoBehaviour
                         break;
                 }
                 break;
+
+            case "map2_N09_도어락":
+                switch (Monologue.monologueEventFlag)
+                {
+                    case 0:
+                        cutScene.PopUpImage(0, 0f);
+                        break;
+
+                    case 4:
+                        cutScene.PopDownImage(0, 0f);
+                        break;
+                }
+                break;
+
+            case "map1_N09_도어락작동":
+                switch (Monologue.monologueEventFlag)
+                {
+                    case 3:
+                        SceneManager.LoadScene("map2_시작");
+                        break;
+                }
+                break;
+
+            case "map2_N12_성공":
+                switch (Monologue.monologueEventFlag)
+                {
+                    case 2:
+                        SceneManager.LoadScene("map2_N13");
+                        break;
+                }
+                break;
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class map1_N09 : MonoBehaviour
 {
@@ -23,33 +24,38 @@ public class map1_N09 : MonoBehaviour
 
             return;
         }
-        // 이후 접근 시 도어락 이미지가 팝업됩니다.
-        else
-        {
-            cutscene.PopUpImage(GameManager.intMap1_N09_Doorlock, 0f);
 
-            // 만약 건전지를 모두 끼웠다면
-            if(GameManager.intMap1_N09_Doorlock == 4)
-            {
-                // map1 컷신으로 이동합니다.
-            }
-        }
+        // 이후 접근 시 도어락 이미지가 팝업됩니다.
+        cutscene.PopUpImage(GameManager.intMap1_N09_Doorlock, 0f);
     }
 
     // 인벤토리에 건전지가 있다면, 삭제하고 도어락에 장착합니다.
     public void Doorlock()
     {
+        cutscene.PopDownImage(GameManager.intMap1_N09_Doorlock, 0f);
+
         foreach (var item in GameManager.inventory)
         {
             if (item.name == "건전지")
             {
                 inventory.RemoveItem("건전지");
                 GameManager.intMap1_N09_Doorlock++;
-                
+
+                // 만약 건전지 3개를 끼웠다면
+                if (GameManager.intMap1_N09_Doorlock == 3)
+                {
+                    // 침실 알람시계 작동
+                    monologue.PrintMonologue("map1_N09_도어락");
+                }
+                // 만약 건전지 4개를 끼웠다면
+                else if (GameManager.intMap1_N09_Doorlock == 4)
+                {
+                    // 스테이지 클리어
+                    monologue.PrintMonologue("map1_N09_도어락작동");
+                }
+
                 break;
             }
         }
-
-        cutscene.PopDownImage(GameManager.intMap1_N09_Doorlock, 0f);
     }
 }

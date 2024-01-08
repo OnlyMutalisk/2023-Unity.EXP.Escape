@@ -27,6 +27,7 @@ public class Messages
     public static ObjectMessage map0_C01_컷신2 = new ObjectMessage();
     public static ObjectMessage map0_C02_컷신1 = new ObjectMessage();
     public static ObjectMessage map0_C02_컷신2 = new ObjectMessage();
+    public static ObjectMessage map1_건전지 = new ObjectMessage();
 
     // 각 독백 & 대화 메시지 덩어리 모음 입니다.
     public static LinkedList<string> 로드뷰_잠김 = new LinkedList<string>();
@@ -43,6 +44,15 @@ public class Messages
     public static LinkedList<string> map0_N05_세탁기 = new LinkedList<string>();
     public static LinkedList<string> map1_독백 = new LinkedList<string>();
     public static LinkedList<string> map1_N09_현관문 = new LinkedList<string>();
+    public static LinkedList<string> map1_N09_도어락 = new LinkedList<string>();
+    public static LinkedList<string> map1_N09_도어락작동 = new LinkedList<string>();
+    public static LinkedList<string> map2_독백 = new LinkedList<string>();
+    public static LinkedList<string> map2_N09_도어락 = new LinkedList<string>();
+    public static LinkedList<string> map2_N12_화장실 = new LinkedList<string>();
+    public static LinkedList<string> map2_N12_잡템 = new LinkedList<string>();
+    public static LinkedList<string> map2_N12_헤어핀 = new LinkedList<string>();
+    public static LinkedList<string> map2_N12_드릴 = new LinkedList<string>();
+    public static LinkedList<string> map2_N12_성공 = new LinkedList<string>();
 
     // map0_C01
     public static LinkedList<string> map0_C01_컷신3 = new LinkedList<string>();
@@ -77,6 +87,11 @@ public class Messages
         튜토리얼_인벤토리.title = "< 아이템 확인 >";
         튜토리얼_인벤토리.message = "아이템 버튼을 누르면 다음과 같이 인벤토리 창이 나타납니다.\n인벤토리에서 아이템을 확인 or 사용할 수 있습니다.";
         튜토리얼_인벤토리.time = 2;
+
+        // 오브젝트 "건전지" 의 상호작용 대사 입니다.
+        map1_건전지.title = "";
+        map1_건전지.message = "건전지를 획득했다.";
+        map1_건전지.time = 2;
 
         // 컷신 1
         map0_C01_컷신1.message = "잊고 싶어도 잊혀지지 않는 그런 순간이 있는가?";
@@ -185,6 +200,46 @@ public class Messages
         // "map1_N09_현관문" 의 최초 상호작용 대사 입니다.
         map1_N09_현관문.AddLast("도어락 건전지가 없다.");
         map1_N09_현관문.AddLast("건전지가 있을만한 곳을 찾아보자.");
+
+        // "map1_N09_도어락" 의 대사 입니다.
+        map1_N09_도어락.AddLast("갑자기 어디선가 시끄러운 알람이 울린다.");
+        map1_N09_도어락.AddLast("소리에 집중하여, 시계를 끄러 가자.");
+
+        // "map1_N09_도어락작동" 의 대사 입니다.
+        map1_N09_도어락작동.AddLast("도어락의 전원이 들어왔다.");
+        map1_N09_도어락작동.AddLast("문고리를 잡고, 내 쪽으로 힘차게 당겼다.");
+        map1_N09_도어락작동.AddLast("그러자 한 순간, 정신이 아득해진다.");
+
+        // "map2_독백" 의 대사 입니다.
+        map2_독백.AddLast("분명.. 뭔가 하려고 했었는데....");
+        map2_독백.AddLast("기억이 잘 안난다. 집안을 돌아다녀보자.");
+
+        // "map2_N09_도어락" 의 대사 입니다.
+        map2_N09_도어락.AddLast("도어락이 고장난 채로 거꾸로 달려있다...");
+        map2_N09_도어락.AddLast("무언가 이상하다. 도움을 청해야 한다.");
+        map2_N09_도어락.AddLast("이 문으론 도저히 나갈 수 없다.");
+        map2_N09_도어락.AddLast("분명 어머니를 위해 화장실에 긴급 구조 벨을 달아놨었지..");
+
+        // "map2_N12_화장실" 의 대사 입니다.
+        map2_N12_화장실.AddLast("화장실 문이 안쪽에서 굳게 잠겨 있다.");
+        map2_N12_화장실.AddLast("문을 딸만한 얇은 핀을 찾거나, 아예 부술거라도 찾아보자.");
+
+        // "map2_N12_잡템" 의 대사 입니다.
+        map2_N12_잡템.AddLast("이걸로는 문을 열 수 없을 것 같다...");
+
+        // "map2_N12_헤어핀" 의 대사 입니다.
+        map2_N12_헤어핀.AddLast("헤어핀이 문고리 안에서 부러졌다...");
+        map2_N12_헤어핀.AddLast("이 정도면 드릴로 문고리를 뜯어봐야 할 것 같다.");
+        map2_N12_헤어핀.AddLast("드릴은 세탁기 옆에 있다.");
+
+        // "map2_N12_드릴" 의 대사 입니다.
+        map2_N12_드릴.AddLast("오... 안에서 나사가 부러져 버렸다...");
+        map2_N12_드릴.AddLast("진짜 남은 방법은 망치로 문을 부수는 수 밖에 없다.");
+        map2_N12_드릴.AddLast("망치는 창고에 있는데.. 창고도 분명 잠궈뒀었지..하...");
+
+        // "map2_N12_성공" 의 대사 입니다.
+        map2_N12_성공.AddLast("문을 여는 데 성공하였다.");
+        map2_N12_성공.AddLast("화장실로 곧바로 들어갔다.");
 
         #endregion
     }

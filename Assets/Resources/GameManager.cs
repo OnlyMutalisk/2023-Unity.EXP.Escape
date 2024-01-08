@@ -39,7 +39,8 @@ public class GameManager : MonoBehaviour
             boolMap0_N04_Flag = GameManager.boolMap0_N04_Flag,
             boolMap0_N03_Flag = GameManager.boolMap0_N03_Flag,
             boolMap1_N09_Flag = GameManager.boolMap1_N09_Flag,
-            intMap1_N09_Doorlock = GameManager.intMap1_N09_Doorlock
+            intMap1_N09_Doorlock = GameManager.intMap1_N09_Doorlock,
+            boolMap2_N12_Flag = GameManager.boolMap2_N12_Flag,
         };
 
         // 데이터를 JSON 으로 직렬화합니다.
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
         GameManager.boolMap0_N03_Flag = data.boolMap0_N03_Flag;
         GameManager.boolMap1_N09_Flag = data.boolMap1_N09_Flag;
         GameManager.intMap1_N09_Doorlock = data.intMap1_N09_Doorlock;
+        GameManager.boolMap2_N12_Flag = data.boolMap2_N12_Flag;
     }
 
     public static void RESET()
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
         boolMap0_N03_Flag = false;
         boolMap1_N09_Flag = false;
         intMap1_N09_Doorlock = 0;
+        boolMap2_N12_Flag = false;
     }
 
     // 각 맵의 제한시간 입니다. 제한시간이 없다면 9999로 설정합니다.
@@ -116,6 +119,9 @@ public class GameManager : MonoBehaviour
     // map1_N09 의 현관문 최초 접근 스크립트를 출력하기 위한 플래그 입니다.
     public static bool boolMap1_N09_Flag = false;
 
+    // map2_N12 의 화장실 최초 접근 스크립트를 출력하기 위한 플래그 입니다.
+    public static bool boolMap2_N12_Flag = false;
+
     // 도어락에 장착된 건전지 수 입니다.
     public static int intMap1_N09_Doorlock = 0;
 
@@ -136,4 +142,5 @@ public class Data
     public bool boolMap0_N03_Flag;
     public bool boolMap1_N09_Flag;
     public int intMap1_N09_Doorlock;
+    public bool boolMap2_N12_Flag;
 }
