@@ -36,8 +36,6 @@ public class GameManager : MonoBehaviour
             lockedRoadViewsRESET = GameManager.lockedRoadViewsRESET,
             lockedRoadViews = GameManager.lockedRoadViews,
             boolMap0_N00_Flag = GameManager.boolMap0_N00_Flag,
-            boolMap0_N04_Flag = GameManager.boolMap0_N04_Flag,
-            boolMap0_N03_Flag = GameManager.boolMap0_N03_Flag,
             boolMap1_N09_Flag = GameManager.boolMap1_N09_Flag,
             intMap1_N09_Doorlock = GameManager.intMap1_N09_Doorlock,
             boolMap2_N12_Flag = GameManager.boolMap2_N12_Flag,
@@ -66,8 +64,6 @@ public class GameManager : MonoBehaviour
         GameManager.lockedRoadViewsRESET = data.lockedRoadViewsRESET;
         GameManager.lockedRoadViews = data.lockedRoadViews;
         GameManager.boolMap0_N00_Flag = data.boolMap0_N00_Flag;
-        GameManager.boolMap0_N04_Flag = data.boolMap0_N04_Flag;
-        GameManager.boolMap0_N03_Flag = data.boolMap0_N03_Flag;
         GameManager.boolMap1_N09_Flag = data.boolMap1_N09_Flag;
         GameManager.intMap1_N09_Doorlock = data.intMap1_N09_Doorlock;
         GameManager.boolMap2_N12_Flag = data.boolMap2_N12_Flag;
@@ -82,8 +78,6 @@ public class GameManager : MonoBehaviour
         lockedRoadViewsRESET = new List<string>();
         lockedRoadViews = new List<string>();
         boolMap0_N00_Flag = true;
-        boolMap0_N04_Flag = true;
-        boolMap0_N03_Flag = false;
         boolMap1_N09_Flag = false;
         intMap1_N09_Doorlock = 0;
         boolMap2_N12_Flag = false;
@@ -110,12 +104,6 @@ public class GameManager : MonoBehaviour
     // 침실 안내 메시지가 최초 1회만 출력되게 하기 위한 플래그 입니다.
     public static bool boolMap0_N00_Flag = true;
 
-    // 침실 창문 접근 메시지가 최초 1회만 출력되게 하기 위한 플래그 입니다.
-    public static bool boolMap0_N04_Flag = true;
-
-    // map0_N03 의 독백이 침실 창문 접근 후 1회만 출력되게 하기 위한 플래그 입니다.
-    public static bool boolMap0_N03_Flag = false;
-
     // map1_N09 의 현관문 최초 접근 스크립트를 출력하기 위한 플래그 입니다.
     public static bool boolMap1_N09_Flag = false;
 
@@ -138,8 +126,6 @@ public class Data
     public List<string> lockedRoadViewsRESET;
     public List<string> lockedRoadViews;
     public bool boolMap0_N00_Flag;
-    public bool boolMap0_N04_Flag;
-    public bool boolMap0_N03_Flag;
     public bool boolMap1_N09_Flag;
     public int intMap1_N09_Doorlock;
     public bool boolMap2_N12_Flag;

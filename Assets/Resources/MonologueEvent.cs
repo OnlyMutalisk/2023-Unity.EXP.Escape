@@ -39,33 +39,6 @@ public class MonologueEvent : MonoBehaviour
                 }
                 break;
 
-            case "map0_N08_침실문":
-                switch (Monologue.monologueEventFlag)
-                {
-                    case 2:
-                        SceneManager.LoadScene("map0_N07");
-                        GameManager.sceneName = "map0_N07";
-                        break;
-                }
-                break;
-
-            case "map0_N04_침실창문":
-                switch (Monologue.monologueEventFlag)
-                {
-                    case 1:
-                        Room.SFX_재생("locked_door");
-                        GameManager.boolMap0_N04_Flag = false;
-                        break;
-
-                    case 3:
-                        SceneManager.LoadScene("map0_N03");
-                        GameManager.sceneName = "map0_N03";
-                        GameManager.lockedRoadViews.Add("map0_N03>>map0_N07");
-                        GameManager.boolMap0_N03_Flag = true;
-                        break;
-                }
-                break;
-
             case "map0_N05_세탁기":
                 switch (Monologue.monologueEventFlag)
                 {
@@ -104,9 +77,19 @@ public class MonologueEvent : MonoBehaviour
                         break;
 
                     case 18:
-                        SceneManager.LoadScene("map0_C02");
-                        GameManager.sceneName = "map0_C02";
-                        break;
+                        if (Begin.boolCheckCutscene == false)
+                        {
+                            SceneManager.LoadScene("Begin");
+                            Room.BGM_재생("lobby");
+                            Begin.boolCheckCutscene = true;
+                            break;
+                        }
+                        else
+                        {
+                            SceneManager.LoadScene("map0_C02");
+                            GameManager.sceneName = "map0_C02";
+                            break;
+                        }
                 }
                 break;
 
@@ -137,9 +120,19 @@ public class MonologueEvent : MonoBehaviour
                         break;
 
                     case 14:
-                        SceneManager.LoadScene("map1_시작");
-                        GameManager.sceneName = "map1_시작";
-                        break;
+                        if (Begin.boolCheckCutscene == false)
+                        {
+                            SceneManager.LoadScene("Begin");
+                            Room.BGM_재생("lobby");
+                            Begin.boolCheckCutscene = true;
+                            break;
+                        }
+                        else
+                        {
+                            SceneManager.LoadScene("map1_시작");
+                            GameManager.sceneName = "map1_시작";
+                            break;
+                        }
                 }
                 break;
 

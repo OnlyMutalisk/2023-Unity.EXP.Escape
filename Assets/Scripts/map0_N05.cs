@@ -19,11 +19,7 @@ public class map0_N05 : MonoBehaviour
     // 세탁기 클릭 시 발생할 이벤트 입니다.
     public void ClickWashingMachine()
     {
-        // 침실창문에 접근해야만 세탁기 클릭 이벤트가 작동합니다.
-        if (GameManager.boolMap0_N04_Flag == false)
-        {
-            ChangeImage();
-            washingMachine.대사_출력("map0_N05_세탁기");
-        }
+        ChangeImage();
+        washingMachine.대사_출력("map0_N05_세탁기");
     }
 }

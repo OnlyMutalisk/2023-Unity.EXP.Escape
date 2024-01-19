@@ -43,7 +43,7 @@ public class Items : MonoBehaviour
     {
         foreach (var item in Item.items)
         {
-            item.sprite = Resources.Load<Sprite>("Items/" + item.name);
+            item.sprite = Resources.Load<Sprite>("Images/Items/" + item.name);
         }
     }
 

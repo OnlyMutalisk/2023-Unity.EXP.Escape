@@ -34,12 +34,9 @@ public class Messages
     public static LinkedList<string> map0_독백 = new LinkedList<string>();
     public static LinkedList<string> map0_N07_TV = new LinkedList<string>();
     public static LinkedList<string> map0_N07_소파 = new LinkedList<string>();
-    public static LinkedList<string> map0_N08_침실문 = new LinkedList<string>();
     public static LinkedList<string> map0_N08_작은액자 = new LinkedList<string>();
     public static LinkedList<string> map0_N08_큰액자 = new LinkedList<string>();
-    public static LinkedList<string> map0_N04_침실창문 = new LinkedList<string>();
-    public static LinkedList<string> map0_N03_독백 = new LinkedList<string>();
-    public static LinkedList<string> map0_N03_N07_잠김 = new LinkedList<string>();
+    public static LinkedList<string> map0_N11_핸드폰 = new LinkedList<string>();
     public static LinkedList<string> map0_N02_화분들 = new LinkedList<string>();
     public static LinkedList<string> map0_N05_세탁기 = new LinkedList<string>();
     public static LinkedList<string> map1_독백 = new LinkedList<string>();
@@ -128,27 +125,16 @@ public class Messages
         // "map0_N07_소파" 의 대사 입니다.
         map0_N07_소파.AddLast("내가 종종 침대로 쓰고 있는 소파다.");
 
-        // "map0_N08_침실문" 의 대사 입니다.
-        map0_N08_침실문.AddLast("어? 잠겼다고? 그럴 리가 없는데?");
-        map0_N08_침실문.AddLast("베란다 창문 쪽으로 들어가야 하나?");
-
         // "map0_N08_작은액자" 의 대사 입니다.
         map0_N08_작은액자.AddLast("대상 받았을 때 엄마랑 찍은 사진이다.");
 
         // "map0_N08_큰액자" 의 대사 입니다.
         map0_N08_큰액자.AddLast("이유는 모르겠지만 나름 좋아하는 그림이다.");
 
-        // "map0_N04_침실창문" 의 대사 입니다.
-        map0_N04_침실창문.AddLast("창문까지 잠겨있다고? 아니야 절대 그럴 리 없는데");
-        map0_N04_침실창문.AddLast("...!");
-        map0_N04_침실창문.AddLast("뭐야 갑자기 베란다 창문이 잠긴다고?");
-
-        // "map0_N03_독백" 의 대사 입니다.
-        map0_N03_독백.AddLast("진짜 누가 집 안에 있어? 장난치지 말고 빨리 나와?");
-        map0_N03_독백.AddLast("세탁실에 예비 열쇠가 있으니 그것부터 찾자!");
-
-        // "map0_N03_N07_잠김" 의 대사 입니다.
-        map0_N03_N07_잠김.AddLast("베란다 창문이 잠겨버렸다.");
+        // "map0_N11_핸드폰" 의 대사 입니다.
+        map0_N11_핸드폰.AddLast("분명 여기 둔 줄 알았는데..");
+        map0_N11_핸드폰.AddLast("세탁기 옆에 두고 왔나?");
+        map0_N11_핸드폰.AddLast("베란다를 통해 세탁기로 가보자.");
 
         // "map0_N02_화분들" 의 대사 입니다.
         map0_N02_화분들.AddLast("엄마가 기르는 풀때기다");

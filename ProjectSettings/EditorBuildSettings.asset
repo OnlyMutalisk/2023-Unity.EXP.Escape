@@ -9,111 +9,114 @@ EditorBuildSettings:
     path: Assets/Scenes/DontDestroy.unity
     guid: 1f4a3ef08a6bc5f4bb14392dcb1f0d57
   - enabled: 1
-    path: Assets/Scenes/Lobby/Begin.unity
+    path: Assets/Scenes/Begin.unity
     guid: 2b84b267a2ef5714a8961c33df50264a
   - enabled: 1
-    path: Assets/Scenes/Lobby/Maker.unity
+    path: Assets/Scenes/Maker.unity
     guid: 46f306c8261286c4f9b57fdafb6fd59e
   - enabled: 1
-    path: "Assets/Scenes/Maps/map0/map0_\uC2DC\uC791.unity"
+    path: "Assets/Scenes/map0/map0_\uC2DC\uC791.unity"
     guid: 82a9436820bb6ee4e9a7a402b0be7115
   - enabled: 1
-    path: "Assets/Scenes/Maps/map0/map0_\uB3C5\uBC31.unity"
+    path: "Assets/Scenes/map0/map0_\uB3C5\uBC31.unity"
     guid: a95829f8eecb01f40961930345da0211
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N00.unity
+    path: Assets/Scenes/map0/map0_N00.unity
     guid: b9282f3628644f641b439211d1c13fc1
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N07.unity
+    path: Assets/Scenes/map0/map0_N07.unity
     guid: e7edb4394edb85f4d924e12d33d44d87
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N03.unity
+    path: Assets/Scenes/map0/map0_N03.unity
     guid: 4ed4b83f0ee5fde42864de56c43245dd
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N08.unity
+    path: Assets/Scenes/map0/map0_N08.unity
     guid: ddedf230598ccdd4db41287d15bdb8f3
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N04.unity
+    path: Assets/Scenes/map0/map0_N04.unity
     guid: f0a398753ae2ca245ae2b421eabbec2f
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N02.unity
+    path: Assets/Scenes/map0/map0_N02.unity
     guid: d1a4b7d940c703047bb8118491b84dde
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_C01.unity
+    path: Assets/Scenes/map0/map0_C01.unity
     guid: 8bcfc8e7370f49942a2b1f4f2b56d71e
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_N05.unity
+    path: Assets/Scenes/map0/map0_N05.unity
     guid: 6fb3c35af52446345bf2bd8a0ed4e245
   - enabled: 1
-    path: Assets/Scenes/Maps/map0/map0_C02.unity
+    path: Assets/Scenes/map0/map0_C02.unity
     guid: 4bb4fd83239dffd4895d847d47661322
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N00.unity
+    path: Assets/Scenes/map1/map1_N00.unity
     guid: f9637153d386be243adf176d9fa6b856
   - enabled: 1
-    path: "Assets/Scenes/Maps/map1/map1_\uB3C5\uBC31.unity"
+    path: "Assets/Scenes/map1/map1_\uB3C5\uBC31.unity"
     guid: d15205111e425614fbfe2e8fe61e6536
   - enabled: 1
-    path: "Assets/Scenes/Maps/map1/map1_\uC2DC\uC791.unity"
+    path: "Assets/Scenes/map1/map1_\uC2DC\uC791.unity"
     guid: 8e32e17550b5ce04f80a14e7e365b870
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N11.unity
+    path: Assets/Scenes/map1/map1_N11.unity
     guid: 895b16f4379ac7744ae8b830df45536c
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N09.unity
+    path: Assets/Scenes/map1/map1_N09.unity
     guid: 37b07e24cdaa0154d86bcf2f9dd4dd4a
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N03.unity
+    path: Assets/Scenes/map1/map1_N03.unity
     guid: 43a65c2888463f646a97d1df67a2c628
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N04.unity
+    path: Assets/Scenes/map1/map1_N04.unity
     guid: f5e677155d46d00448e416286fdf37ff
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N05.unity
+    path: Assets/Scenes/map1/map1_N05.unity
     guid: 08fedf8268bfb9e459530a6e27a2a3d9
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N07.unity
+    path: Assets/Scenes/map1/map1_N07.unity
     guid: 316fc97e470f7e8478da8f211b7def4b
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N08.unity
+    path: Assets/Scenes/map1/map1_N08.unity
     guid: 219f47a74c69205449875af4a976d4fd
   - enabled: 1
-    path: Assets/Scenes/Maps/map1/map1_N10.unity
+    path: Assets/Scenes/map1/map1_N10.unity
     guid: 8d3f2a7f9ec4b2943a1f3b25aaef3f0e
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N03.unity
+    path: Assets/Scenes/map2/map2_N03.unity
     guid: a555d7c1b11686845a3083706a7d4b67
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N04.unity
+    path: Assets/Scenes/map2/map2_N04.unity
     guid: d6339524cfd1a0c4f93bcf673c2dbf75
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N05.unity
+    path: Assets/Scenes/map2/map2_N05.unity
     guid: bce844d8c650d314ba28914e782aea7b
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N07.unity
+    path: Assets/Scenes/map2/map2_N07.unity
     guid: bd77f9b1faa57ae41bebe958261bb8c1
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N08.unity
+    path: Assets/Scenes/map2/map2_N08.unity
     guid: 5c6561a3d1bac25468f5abb404593b46
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N09.unity
+    path: Assets/Scenes/map2/map2_N09.unity
     guid: 0bc02ed7ddc31c0418a2e85b7fdf812a
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N10.unity
+    path: Assets/Scenes/map2/map2_N10.unity
     guid: 3a9ce0c119c786c47bfcb918ab808f1a
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N11.unity
+    path: Assets/Scenes/map2/map2_N11.unity
     guid: b8b4be1b49fb5b545a06bf95edceedff
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N12.unity
+    path: Assets/Scenes/map2/map2_N12.unity
     guid: b7265b8cb013f304d83a68dded084f01
   - enabled: 1
-    path: "Assets/Scenes/Maps/map2_\uB3C5\uBC31.unity"
+    path: "Assets/Scenes/map2/map2_\uB3C5\uBC31.unity"
     guid: 0fbd6efcfbab20e459f8be13773a0bb7
   - enabled: 1
-    path: "Assets/Scenes/Maps/map2_\uC2DC\uC791.unity"
+    path: "Assets/Scenes/map2/map2_\uC2DC\uC791.unity"
     guid: 8e4779a2ec62df5418ee5ec45ffeb85f
   - enabled: 1
-    path: Assets/Scenes/Maps/map2_N13.unity
+    path: Assets/Scenes/map2/map2_N13.unity
     guid: 40b291b5407384a4cad1286f11ee4988
+  - enabled: 1
+    path: Assets/Scenes/map0/map0_N11.unity
+    guid: 3abedc0fa4a7eb347a569f39fe2a2a20
   m_configObjects: {}

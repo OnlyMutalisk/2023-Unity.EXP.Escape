@@ -24,7 +24,7 @@ public class Slot : MonoBehaviour
         }
         else
         {
-            image.sprite = Resources.Load<Sprite>("UI/장비창");
+            image.sprite = Resources.Load<Sprite>("Images/UI/장비창");
         }
     }
 

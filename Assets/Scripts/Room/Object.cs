@@ -1,8 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading;
-using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -8,6 +9,36 @@ public class Begin : MonoBehaviour
 {
     public GameObject confirmation;
     public GameObject alert;
+    public GameObject Cutscenes;
+
+    #region 내부 구현
+
+    // 컷신 재생이 게임 진행으로부터인지, 메인 화면을 통한 것인지 확인합니다.
+    // true 라면 정상 게임 진행, false 라면 메인 화면을 통한 것 입니다.
+    public static bool boolCheckCutscene = true;
+
+    // 해상도 바깥 부분 빛번짐을 막기 위해, 로딩 화면을 0.5 초 동안 출력합니다.
+    public void Start()
+    {
+        StartCoroutine(LoadingWait());
+    }
+
+    public IEnumerator LoadingWait()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        try
+        {
+            GameObject.Find("Loading").SetActive(false);
+        }
+        catch (System.Exception)
+        {
+            // 단순히 아무 동작도 하지 않고 넘기기 위한 try catch 문 입니다.
+        }
+
+    }
+
+    #endregion
 
     /// <summary>
     /// <br>확인 창을 팝업 합니다.</br>
@@ -89,5 +120,22 @@ public class Begin : MonoBehaviour
     public void MakerButton()
     {
         SceneManager.LoadScene("Maker");
+    }
+
+    /// <summary>
+    /// <br>컷신으로 넘어가기 위한 코드 입니다.</br>
+    /// </summary>
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+        boolCheckCutscene = false;
+    }
+
+    /// <summary>
+    /// <br>컷신을 위한 BGM 입니다.</br>
+    /// </summary>
+    public void BGM(string BGM)
+    {
+        Room.BGM_재생(BGM);
     }
 }
