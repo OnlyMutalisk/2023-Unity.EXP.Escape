@@ -4,6 +4,7 @@ public class map2_N12 : MonoBehaviour
 {
     public Monologue monologue;
     public Inventory inventory;
+    public GameObject gameObjectInventory;
 
     public void 화장실()
     {
@@ -21,8 +22,14 @@ public class map2_N12 : MonoBehaviour
             return;
         }
 
+        // 인벤토리가 off 상태이면, 리턴합니다.
+        if (gameObjectInventory.active == false)
+        {
+            return;
+        }
+
         // 헤어핀은 10% 확률로 문을 오픈
-        if(inventory.currentSlotItemName == "헤어핀")
+        if (inventory.currentSlotItemName == "헤어핀")
         {
             inventory.RemoveItem("헤어핀");
 

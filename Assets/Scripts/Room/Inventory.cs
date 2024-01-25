@@ -51,6 +51,7 @@ public class Inventory : MonoBehaviour
     private void Awake()
     {
         FreshSlot();
+        ClickSlot(0);
     }
 
     #endregion

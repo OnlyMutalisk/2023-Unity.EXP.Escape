@@ -2409,6 +2409,7 @@ MonoBehaviour:
   monologue: {fileID: 410914225}
   inventory: {fileID: 1441030695}
   cutscene: {fileID: 1574610434}
+  gameObjectInventory: {fileID: 1441030694}
 --- !u!1 &710326036
 GameObject:
   m_ObjectHideFlags: 0

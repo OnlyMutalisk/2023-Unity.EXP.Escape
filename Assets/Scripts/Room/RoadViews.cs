@@ -31,6 +31,7 @@ public partial class RoadViews : MonoBehaviour
         // 열린 로드뷰라면 지정한 씬으로 이동합니다.
         else
         {
+            Room.SFX_재생("Move");
             SceneManager.LoadScene(nextSceneName);
             GameManager.sceneName = nextSceneName;
         }
