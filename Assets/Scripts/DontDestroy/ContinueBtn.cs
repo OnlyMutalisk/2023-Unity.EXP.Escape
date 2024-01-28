@@ -11,5 +11,6 @@ public class ContinueBtn : MonoBehaviour
     {
         GameTimer.TimerOn();
         menu.SetActive(false);
+        Room.SFX_재생("ContinueBtn");
     }
 }

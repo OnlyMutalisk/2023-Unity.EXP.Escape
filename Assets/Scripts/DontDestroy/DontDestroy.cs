@@ -19,6 +19,8 @@ public class DontDestroy : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
+        Items.Add();
+
         SceneManager.LoadScene("Begin");
     }
 }

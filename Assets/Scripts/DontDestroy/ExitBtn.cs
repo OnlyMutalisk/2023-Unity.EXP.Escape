@@ -10,6 +10,8 @@ public class ExitBtn : MonoBehaviour
     // 종료하기 버튼을 눌렀을 시 시작 화면으로 가거나, 이미 시작화면이라면 게임을 종료합니다.
     public void ChangeScene()
     {
+        Room.SFX_재생("ExitBtn");
+
         if (SceneManager.GetActiveScene().name == "Begin")
         {
             menu.SetActive(false);

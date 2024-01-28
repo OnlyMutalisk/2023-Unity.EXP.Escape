@@ -46,6 +46,7 @@ public class map1_N09 : MonoBehaviour
         {
             inventory.RemoveItem("건전지");
             GameManager.intMap1_N09_Doorlock++;
+            gameObjectInventory.SetActive(false);
 
             // 만약 건전지 3개를 끼웠다면
             if (GameManager.intMap1_N09_Doorlock == 3)
